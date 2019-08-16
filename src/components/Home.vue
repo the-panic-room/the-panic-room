@@ -106,10 +106,10 @@
           </a>
         </div>
         <div class="text-center mt-1">
-          <a href="#" class="pr-2 align-bottom">
+          <a href="#" class="pr-1 align-bottom">
             <img src="@/assets/linkedin.png" alt="Linkedin">
           </a>
-          <a href="https://github.com/the-panic-room" class="pr-2 align-bottom">
+          <a href="https://github.com/the-panic-room" class="pr-1 align-bottom">
             <img src="@/assets/GitHub-Mark-Light-32px.png" alt="Github">
           </a>
           <a href="#" class="pr-1">
