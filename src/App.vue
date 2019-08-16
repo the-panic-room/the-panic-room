@@ -12,10 +12,10 @@
             <router-link class="pr-2" v-bind:to="'/about'">
               Equipo
             </router-link> -->
-            <a href="#" class="pr-2 align-bottom">
+            <a href="#" class="pr-2 align-bottom" target="_blank">
               <img src="@/assets/linkedin.png" alt="Linkedin">
             </a>
-            <a href="https://github.com/the-panic-room" class="pr-2 align-bottom">
+            <a href="https://github.com/the-panic-room" class="pr-2 align-bottom" target="_blank">
               <img src="@/assets/GitHub-Mark-Light-32px.png" alt="Github">
             </a>
             <button>
