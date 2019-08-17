@@ -106,7 +106,7 @@
           </a>
         </div>
         <div class="text-center mt-1">
-          <a href="#" class="pr-1 align-bottom">
+          <a href="https://www.linkedin.com/company/thepanicroom" class="pr-1 align-bottom">
             <img src="@/assets/linkedin.png" alt="Linkedin">
           </a>
           <a href="https://github.com/the-panic-room" class="pr-1 align-bottom">
