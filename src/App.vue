@@ -12,7 +12,7 @@
             <router-link class="pr-2" v-bind:to="'/about'">
               Equipo
             </router-link> -->
-            <a href="#" class="pr-2 align-bottom" target="_blank">
+            <a href="https://www.linkedin.com/company/thepanicroom" class="pr-2 align-bottom" target="_blank">
               <img src="@/assets/linkedin.png" alt="Linkedin">
             </a>
             <a href="https://github.com/the-panic-room" class="pr-2 align-bottom" target="_blank">
