@@ -7,7 +7,7 @@
             <!-- Your app is on trouble? -->
             ¿Tu app esta en apuros?
             <br>
-            Entra al cuarto del panico.
+            Entra al cuarto del pánico.
             <!-- Get in the panic room. -->
           </h2>
           <p class="hero-text">
