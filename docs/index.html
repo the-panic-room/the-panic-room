@@ -1,5 +1,5 @@
-<html lang="en">
-    <!doctype html>
+<!doctype html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,12 +14,21 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147132627-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-147132627-1');
+        </script>
     </head>
     <body>
         <div id="main" class="container-fluid hero-imagen">
-            <nav id="nav" class="navbar navbar-expand-sm avbar-dark px-4">
+            <nav id="nav" class="navbar navbar-expand-sm avbar-dark px-4" itemscope itemtype ="http://schema.org/Organization">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/tpr.png" class="logo" alt="logo diggi">
+                    <img src="assets/images/tpr.png" class="logo" alt="The panic room" itemprop="logo">
                 </a>
                 <button
                     class="navbar-toggler ml-auto text-white"
@@ -63,7 +72,7 @@
                             <br>
                             Entra al cuarto del pánico.
                         </h1>
-                        <p class="hero-text">
+                        <p class="hero-text" itemprop="description">
                             Somos un equipo fullstack de desarrolladores
                             <br>
                             listos para hacer realidad tus ideas.
