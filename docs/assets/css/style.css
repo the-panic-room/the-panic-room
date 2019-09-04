@@ -28,7 +28,7 @@ body {
 
 .btn-primary { 
     background: #9b4dca !important;
-    border: none !important 
+    border: none !important
 }
 
 .btn-link {
@@ -40,6 +40,8 @@ body {
 
 .btn-main {
     border: none;
+    height: 48px;
+    line-height: 4.4em;
     background-size: 150% auto;
     background-image: linear-gradient(to right, #9b4dca 0%, rgb(78, 69, 197) 51%, rgb(41, 125, 194) 100%);
 }
@@ -74,6 +76,11 @@ body {
 .link:hover {
     text-decoration: none;
     color: white;
+}
+
+.social-logo {
+    height: 35px;
+    width: auto;
 }
 
 
@@ -115,9 +122,15 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 }
 
 /* main section */
+.hero-wrapper{
+    height: 85%;
+    display: flex;
+    align-content: center
+}
+
 .hero {
     position: relative;
-    top: 5%;
+    /*top: 5%;*/
     left: 10%;
 }
 
@@ -164,6 +177,10 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 }
 
 @media only screen and (max-width: 574px){
+    .hero-wrapper{
+        align-content: start;
+    }
+
     .hero {
         position: initial;
         padding-left:  3em;
