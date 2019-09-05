@@ -137,7 +137,7 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 .hero-imagen {
     height: 750px;
     width: auto;
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.webp');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -169,7 +169,7 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
         left: 5%;
     }
     .hero-imagen{
-        background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.733), transparent), url('../images/bg.png'); 
+        background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.733), transparent), url('../images/bg.webp'); 
         background-position: center right;
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -189,7 +189,7 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
     .hero-imagen{
           width: auto;
         background-repeat: no-repeat;
-        background-image: url('../images/bg-mobile.png');
+        background-image: url('../images/bg-mobile.webp');
         background-position: bottom center;
         /* background-size: 100% auto; */
         background-size: contain;
@@ -202,7 +202,7 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
      }
     .hero-imagen{
         width: auto;
-        background: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.png') no-repeat center; 
+        background: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.webp') no-repeat center; 
         background-size: auto auto;
     }
 }
