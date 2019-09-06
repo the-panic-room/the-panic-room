@@ -46,10 +46,10 @@
       name="twitter:description"
       content="The Panic Room, equipo de desarrolladores full stack capacitados en el diseño y desarrollo de aplicaciones web/móviles y circuitos impresos."
     />
-    <meta name="theme-color" content="rgb(0,0,0)">
+    <meta name="theme-color" content="rgb(0,0,0)" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32.png" />
-    <link rel="apple-touch-icon" href="assets/img/180.png">
+    <link rel="apple-touch-icon" href="assets/img/180.png" />
     <link
       rel="icon"
       type="image/png"
@@ -392,5 +392,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript" src="./cache-polyfill.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(function() {
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
   </body>
 </html>
