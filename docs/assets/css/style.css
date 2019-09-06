@@ -69,6 +69,12 @@ body {
     padding-right: 1em;
 }
 
+.btn-touch {
+    height: 50px;
+    display: inline-block;
+    margin: 8px;
+}
+
 .link {
     color: white
 }
