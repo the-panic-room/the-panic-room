@@ -6,8 +6,15 @@
 name: The Panic Room
 
 # Short bio or description (displayed in the header)
-description: Empresa de servicios de software.
+description: The Panic Room, equipo de desarrolladores full stack capacitados en el diseño y desarrollo de aplicaciones web/móviles y circuitos impresos.
 short_description: Full stack developers
+
+authors:
+  - Valentina Azócar
+  - Jhonny Mata
+  - Jesús Marín
+  - Jesús Rodríguez
+  - Carlos Gamardo
 
 # Set the Sass partials directory, as we're using @imports
 sass:

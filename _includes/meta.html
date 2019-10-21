@@ -1,20 +1,20 @@
-<meta property="og:url" content="https://panicroom.tk/" />
+<meta property="og:url" content="{{ '/' | absolute_url }}" />
 <meta property="og:image"
     content="{{'assets/images/the%20panic%20room%20full%20stack%20developers.png' | prepend: site.baseurl }}" />
-<meta property="og:description" content="Desarrollo de aplicaciones móviles/web y circuitos impresos." />
-<meta name="author" content="Valentina Azócar, Jhonny Mata, Jesús Marín, Jesús Rodríguez, Carlos Gamardo" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta name="author" content="{{ site.authors | join: ', ' }}" />
 <meta name="description"
-    content="Equipo de desarrolladores full stack capacitados en el diseño y desarrollo de aplicaciones móviles/web y circuitos impresos." />
+    content="{{ site.description }}" />
 <meta name="keywords"
-    content="the panic room, panic room, tpanicroom, developer, desarrolladores, equipo, web, angular, react, vue" />
+    content="{{ page.keywords | join: ', ' }}" />
 <meta name="twitter:image"
     content="{{'assets/images/the%20panic%20room%20full%20stack%20developers.png' | prepend: site.baseurl }}" />
-<meta property="og:title" content="The Panic Room - Full stack developers" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }} - {{ site.short_description }}" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The Panic Room - Full stack developers" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }} - {{ site.short_description }}" />
 <meta name="twitter:description"
-    content="The Panic Room, equipo de desarrolladores full stack capacitados en el diseño y desarrollo de aplicaciones web/móviles y circuitos impresos." />
+    content="{{ site.description }}" />
 <meta name="theme-color" content="rgb(0,0,0)" />
 <link rel="icon" type="image/png" sizes="16x16" href="{{'assets/favicon/16.png' | prepend: site.baseurl }}" />
 <link rel="icon" type="image/png" sizes="32x32" href="{{'assets/favicon/32.png' | prepend: site.baseurl }}" />
