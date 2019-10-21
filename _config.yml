@@ -9,15 +9,10 @@ name: The Panic Room
 description: Empresa de servicios de software.
 short_description: Full stack developers
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: "/"
-
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: _sass
 
 # Use the following plug-ins
 gems:

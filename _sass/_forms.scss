@@ -1,0 +1,16 @@
+/* forms */
+label { 
+    color: rgb(153, 153, 153);
+    font-weight: 600;
+    display: block;
+}
+
+input, textarea {
+    border: solid 2px rgb(153, 153, 153);
+    background: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: white
+}
+input:focus, textarea:focus { border-color: #9b4dca; outline: none }
+
