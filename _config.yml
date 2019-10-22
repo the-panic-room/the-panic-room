@@ -6,7 +6,7 @@
 name: The Panic Room
 
 # Short bio or description (displayed in the header)
-description: The Panic Room, equipo de desarrolladores full stack capacitados en el diseño y desarrollo de aplicaciones web/móviles y circuitos impresos.
+description: En The Panic Room hacemos posible la integración del hardware y software para mejorar la experiencia del usuario basándonos en las tendencias tecnológicas.
 short_description: Full stack developers
 
 authors:
@@ -15,6 +15,9 @@ authors:
   - Jesús Marín
   - Jesús Rodríguez
   - Carlos Gamardo
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-147132627-1
 
 # Set the Sass partials directory, as we're using @imports
 sass:
