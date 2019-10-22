@@ -1,0 +1,11 @@
+<div class="card py-4">
+    <div class="py-3">
+    <img src="{{ post.cover }}" class="rounded-circle" alt="{{ post.title }}" width="128" height="128">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text"><small class="text-muted">Posteado el {{ post.date | date: "%Y-%m-%d %H:%M" }}</small></p>
+        <p class="card-text">{{ post.summary }}</p>
+        <a href="{{ post.url }}" class="btn btn-primary stretched-link">Ver  detalles</a>
+    </div>
+</div>

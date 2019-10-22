@@ -2,24 +2,59 @@
 layout: default
 ---
 <style>
+    .container-page, .breadcrumb {
+        background-color: #171717;
+    }
+    .breadcrumb .breadcrumb-item a{
+        color: #9b4dca;
+    }
+    .breadcrumb .breadcrumb-item.active{
+        color: #aab1b7;
+    }
     .container-page {
-        background-color: #bbb;
         min-height: 750px;
+    }
+    .hero-imagen {
+        position: relative;
+    }
+    .hero-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(to top, #000 0%, rgba(0,0,0,.3) 100%);
+    }
+    .hero-footer, .hero-footer h1 {
+        font-weight: bold;
+        text-align: right;
     }
 </style>
 <div id="main" class="container-fluid">
-    {% include nav.html %}
-    <div class="row my-3 justify-content-between">
-        <div class="col-md-3">
-            Navegacion
-        </div>
-        <div class="col-md-8">
-            <!-- Contenido -->
-            <div class="container container-page">
-                {{ content }}
+    {% if page.cover %}
+        <div class="container-fluid hero-imagen" style="background-image: url('{{ page.cover }}')">
+            {% include nav.html %}
+            <div class="row justify-content-end hero-footer py-5 px-3">
+                <div class="col-md-6">
+                    <h1>{{ page.cover_title | default:page.title }}</h1>
+                    <p>{{ page.summary }}</p>
+                </div>
             </div>
         </div>
-    </div>
+    {% else %}
+        {% include nav.html %}
+    {% endif %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% link index.html %}">Inicio</a></li>
+            {% for data in page.breadscrums %}
+            <li class="breadcrumb-item"><a href="{{ data.url }}">{{ data.name }}</a></li>
+            {% endfor %}
+            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        </ol>
+    </nav>
+    <div class="container container-page py-3 my-3 px-3">
+        <a href="#">hola</a>
+        {{ content }}
+    </div>    
 </div>
 <div class="footer container-fluid">
     <div class="row px-5">
