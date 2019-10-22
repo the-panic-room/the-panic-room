@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "The Panic Room",
+        "url": "https://panicroom.tk",
+        "address": "Venezuela, Sucre, Cúmana [6101]",
+        "sameAs": [
+          "https://t.me/tpanicroom",
+          "https://github.com/the-panic-room",
+          "https://twitter.com/tpanicroom",
+          "https://www.facebook.com/tpanicroom",
+          "https://www.instagram.com/tpanicroom",
+          "https://www.linkedin.com/company/thepanicroom",
+          "https://www.youtube.com/channel/UC-YpyV5VKGgRePyUo0AZb_A"
+        ]
+      }
+    </script>
+
+<script src="{{'/assets/js/jquery-3.4.1.min.js' | prepend: site.baseurl }}"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="{{'/assets/js/popper.min.js' | prepend: site.baseurl }}"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+<script src="{{'/assets/js/bootstrap.min.js' | prepend: site.baseurl }}"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="{{'/assets/js/cache-polyfill.js' | prepend: site.baseurl }}"></script>
+{% for uri in page.scripts %}
+    <script type="text/javascript" src="{{ url | prepend: site.baseurl }}"></script>
+{% endfor %}
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("{{'/assets/js/sw.js' | prepend: site.baseurl }}").then(function () {
+            console.log("Service Worker Registered");
+        });
+    }
+</script>

@@ -1,0 +1,6 @@
+<link rel="manifest" href="{{'/assets/manifest.json' | prepend: site.baseurl }}" />
+<link rel="stylesheet" type="text/css" href="{{'/assets/css/bootstrap.min.css' | prepend: site.baseurl }}" />
+<link rel="stylesheet" type="text/css" href="{{'/assets/css/style.css' | prepend: site.baseurl }}" />
+{% for style in page.styles %}
+    <link rel="stylesheet" type="text/css" href="{{ style | prepend: site.baseurl }}" />
+{% endfor %}

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<style>
+    .container-page {
+        background-color: #bbb;
+        min-height: 750px;
+    }
+</style>
+<div id="main" class="container-fluid">
+    {% include nav.html %}
+    <div class="row my-3 justify-content-between">
+        <div class="col-md-3">
+            Navegacion
+        </div>
+        <div class="col-md-8">
+            <!-- Contenido -->
+            <div class="container container-page">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer container-fluid">
+    <div class="row px-5">
+        <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+            <a class="mb-2 d-block" href="#">Términos y condiciones</a>
+            <a class="mb-2 d-block" href="#">Politicas de privacidad</a>
+        </div>
+        <div class="col-12 col-sm-4 text-left text-sm-center mb-4 mb-sm-0">
+            The Panic Room © 2019.
+        </div>
+        <div class="col-12 col-sm-4 text-left text-sm-right">
+            <a class="mb-2 d-block" href="#">Sobre nosotros</a>
+        </div>
+    </div>
+</div>
