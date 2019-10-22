@@ -8,7 +8,7 @@ title: Nuestro Blog
         <!-- Contenido -->
         <h1 class="mb-3">{{ page.title }}</h1>
         <div class="row justify-content-center">
-            {% for post in site.posts|sort: "date" %}
+            {% for post in site.posts %}
             <div class="col-md-3">
                 {% include card_post.html post=post %}
             </div>

@@ -15,7 +15,9 @@ layout: default
         min-height: 750px;
     } */
     .hero-imagen {
+        width: 100%;
         position: relative;
+        background-size: 100% 100%;
     }
     .hero-footer {
         position: absolute;
@@ -28,16 +30,16 @@ layout: default
         text-align: right;
     }
 </style>
-<div id="main" class="container-fluid">
+<div id="main" class="container-fluid m-0 p-0">
     {% if page.cover %}
-        <div class="container-fluid hero-imagen" style="background-image: url('{{ page.cover }}')">
+        <div class="container-fluid hero-imagen m-0 p-0" style="background-image: url('{{ page.cover }}')">
             {% include nav.html %}
-            <div class="row justify-content-end hero-footer py-5 px-3">
+            <div class="row justify-content-end hero-footer py-5 px-3 m-0">
                 <div class="col-md-6">
                     <h1>{% if page.type == 'event' %}Evento: {% endif %}{{ page.cover_title | default:page.title }}</h1>
                     <p>{{ page.summary }}</p>
                     {% if page.type == 'event' %}
-                    <p>{{ page.date_init| date: "%Y-%m-%d" }}{% if page.date_end and page.date_end != page.date_init %} hasta {{ page.date_end| date: "%Y-%m-%d" }}{% endif %}</p>
+                    <p><i class="fa calendar-alt"></i>{{ page.date_init| date: "%Y-%m-%d" }}{% if page.date_end and page.date_end != page.date_init %} hasta {{ page.date_end| date: "%Y-%m-%d" }}{% endif %}</p>
                     <p>{{ page.time_init| date: "%I:%M %P" }}{% if page.time_end and page.time_end != page.time_init %} - {{ page.time_end| date: "%I:%M %P" }}{% endif %}</p>
                     {% endif %}
                 </div>
@@ -50,12 +52,13 @@ layout: default
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{% link index.html %}">Inicio</a></li>
             {% for data in page.breadscrums %}
-            <li class="breadcrumb-item"><a href="{{ data.url }}">{{ data.name }}</a></li>
+            <li class="breadcrumb-item"><a href="{% link {{data.url}} %}">{{ data.name }}</a></li>
             {% endfor %}
             <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
         </ol>
     </nav>
     <div class="container container-page py-3 my-3 px-3">
+        {{ site.pages }}
         {{ content }}
         <hr>
         {% include person_media.html author=page.author post=page.date %}

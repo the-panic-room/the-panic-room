@@ -24,6 +24,8 @@ sass:
   style: :compressed # You might prefer to minify using :compressed
   sass_dir: _sass
 
+sitemap: true
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
