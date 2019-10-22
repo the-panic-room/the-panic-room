@@ -1,0 +1,7 @@
+<div class="media my-3">
+    <img src="{{ include.author.avatar }}" class="rounded-circle" alt="{{ include.author.name }}" width="64" height="64">
+    <div class="ml-3 media-body">
+        <h5 class="mt-0">{{ include.author.name }}</h5>
+        <small><strong>Post:</strong> {{ include.post | date: "%Y-%m-%d %H:%M" }}</small>
+    </div>
+</div>

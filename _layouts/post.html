@@ -11,9 +11,9 @@ layout: default
     .breadcrumb .breadcrumb-item.active{
         color: #aab1b7;
     }
-    .container-page {
+    /* .container-page {
         min-height: 750px;
-    }
+    } */
     .hero-imagen {
         position: relative;
     }
@@ -37,8 +37,8 @@ layout: default
                     <h1>{% if page.type == 'event' %}Evento: {% endif %}{{ page.cover_title | default:page.title }}</h1>
                     <p>{{ page.summary }}</p>
                     {% if page.type == 'event' %}
-                    <p>{{ page.date_init| date: "%Y-%m-%d" }}</p>{% if page.date_end %} al <p>{{ page.date_end| date: "%Y-%m-%d" }}</p>{% endif %}
-                    <p>{{ page.date_init| date: "%I:%M %P" }}</p>
+                    <p>{{ page.date_init| date: "%Y-%m-%d" }}{% if page.date_end and page.date_end != page.date_init %} hasta {{ page.date_end| date: "%Y-%m-%d" }}{% endif %}</p>
+                    <p>{{ page.time_init| date: "%I:%M %P" }}{% if page.time_end and page.time_end != page.time_init %} - {{ page.time_end| date: "%I:%M %P" }}{% endif %}</p>
                     {% endif %}
                 </div>
             </div>
@@ -56,9 +56,10 @@ layout: default
         </ol>
     </nav>
     <div class="container container-page py-3 my-3 px-3">
-        <a href="#">hola</a>
         {{ content }}
-    </div>    
+        <hr>
+        {% include person_media.html author=page.author post=page.date %}
+    </div>
 </div>
 <div class="footer container-fluid">
     <div class="row px-5">
