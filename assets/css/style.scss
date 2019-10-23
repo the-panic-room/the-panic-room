@@ -68,8 +68,20 @@ sitemap:
 /* footer */
 .footer {
     background: rgb(20, 20, 20);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer ul {
+    overflow: hidden;
+    margin: 0 !important;
+}
+.footer ul li {
+    float: left;
+    // display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    list-style: none;
 }
 .footer a { color: #9b4dca !important; }
 
