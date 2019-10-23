@@ -44,4 +44,8 @@ exclude:
   - CHANGELOG.md
   - README.md
   - CNAME
-  - vendor
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
