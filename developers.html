@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Desarrolladores
+title: Equipo
 ---
 <div id="main" class="container-fluid">
     {% include nav.html %}
@@ -9,11 +9,11 @@ title: Desarrolladores
         <h1 class="mb-3">{{ page.title }}</h1>
         {{ site.teams }}
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                {% for team in site.teams %}
+            {% for team in site.teams %}
+                <div class="col-md-4 my-3">
                     {% include card_people.html person=team %}
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>
