@@ -2,6 +2,16 @@
 layout: default
 title: Nuestro Blog
 ---
+<style>
+    .card {
+        overflow: hidden;
+    }
+    .card-cover > img {
+        position: relative;
+        width: 100%;
+        min-height: 150px;
+    }    
+</style>
 <div id="main" class="container-fluid">
     {% include nav.html %}
     <div class="container my-3">
@@ -9,7 +19,7 @@ title: Nuestro Blog
         <h1 class="mb-3">{{ page.title }}</h1>
         <div class="row justify-content-center">
             {% for post in site.posts %}
-            <div class="col-md-3">
+            <div class="col-md-4">
                 {% include card_post.html post=post %}
             </div>
             {% endfor %}
