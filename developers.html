@@ -1,0 +1,33 @@
+---
+layout: default
+title: Desarrolladores
+---
+<div id="main" class="container-fluid">
+    {% include nav.html %}
+    <div class="container my-3">
+        <!-- Contenido -->
+        <h1 class="mb-3">{{ page.title }}</h1>
+        {{ site.teams }}
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                {% for team in site.teams %}
+                    {% include card_people.html person=team %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer container-fluid">
+    <div class="row px-5">
+        <div class="col-12 col-sm-4 mb-4 mb-sm-0">
+            <a class="mb-2 d-block" href="#">Términos y condiciones</a>
+            <a class="mb-2 d-block" href="#">Politicas de privacidad</a>
+        </div>
+        <div class="col-12 col-sm-4 text-left text-sm-center mb-4 mb-sm-0">
+            The Panic Room © 2019.
+        </div>
+        <div class="col-12 col-sm-4 text-left text-sm-right">
+            <a class="mb-2 d-block" href="#">Sobre nosotros</a>
+        </div>
+    </div>
+</div>
