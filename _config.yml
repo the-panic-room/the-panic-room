@@ -27,7 +27,7 @@ sass:
   style: ":compressed" # You might prefer to minify using :compressed
   sass_dir: _sass
 
-sitemap: true
+version: v1.2.0
 
 # Use the following plug-ins
 gems:
