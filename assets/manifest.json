@@ -1,9 +1,11 @@
+---
+---
 {
     "short_name":"panicroom.tk",
     "name":"The Panic Room - Full stack developers",
     "icons":[
-        {"src":"/assets/img/192.png","type":"image/png","sizes":"192x192"},
-        {"src":"/assets/img/splahs.png","type":"image/png","sizes":"512x512"}
+        {"src":"{{'/assets/img/192.png' | prepend: site.baseurl }}","type":"image/png","sizes":"192x192"},
+        {"src":"{{'/assets/img/splahs.png' | prepend: site.baseurl }}","type":"image/png","sizes":"512x512"}
     ],
     "start_url":"/index.html",
     "background_color":"rgb(255,255,255)",

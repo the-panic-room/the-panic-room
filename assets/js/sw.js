@@ -1,25 +1,26 @@
+---
+---
 self.addEventListener("install", function(e) {
   e.waitUntil(
     caches.open("thepanicroom").then(function(cache) {
       return cache.addAll([
-        "/",
-        "/index.html",
-        "/index.html?homescreen=1",
-        "/?homescreen=1",
-        "/assets/css/style.css",
-        "/assets/css/bootstrap.min.css",
-        "/assets/js/bootstrap.min.js",
-        "/assets/js/popper.min.js",
-        "/assets/js/jquery-3.4.1.min.js",
-        "/assets/images/bg-mobile.webp",
-        "/assets/images/bg.webp",
-        "/assets/images/facebook.svg",
-        "/assets/images/github.svg",
-        "/assets/images/instagram.svg",
-        "/assets/images/linkedin.svg",
-        "/assets/images/telegram.webp",
-        "/assets/images/tpr.webp",
-        "/assets/images/whatsapp.webp"
+        "{{'/' | prepend: site.baseurl }}",
+        "{{'/index.html' | prepend: site.baseurl }}",
+        "{{'/index.html?homescreen=1' | prepend: site.baseurl }}",
+        "{{'/assets/css/style.css' | prepend: site.baseurl }}",
+        "{{'/assets/css/bootstrap.min.css' | prepend: site.baseurl }}",
+        "{{'/assets/js/bootstrap.min.js' | prepend: site.baseurl }}",
+        "{{'/assets/js/popper.min.js' | prepend: site.baseurl }}",
+        "{{'/assets/js/jquery-3.4.1.min.js' | prepend: site.baseurl }}",
+        "{{'/assets/images/bg-mobile.webp' | prepend: site.baseurl }}",
+        "{{'/assets/images/bg.webp' | prepend: site.baseurl }}",
+        "{{'/assets/images/facebook.svg' | prepend: site.baseurl }}",
+        "{{'/assets/images/github.svg' | prepend: site.baseurl }}",
+        "{{'/assets/images/instagram.svg' | prepend: site.baseurl }}",
+        "{{'/assets/images/linkedin.svg' | prepend: site.baseurl }}",
+        "{{'/assets/images/telegram.webp' | prepend: site.baseurl }}",
+        "{{'/assets/images/tpr.webp' | prepend: site.baseurl }}",
+        "{{'/assets/images/whatsapp.webp' | prepend: site.baseurl }}",
       ]);
     })
   );

@@ -27,6 +27,8 @@ sass:
   style: ":compressed" # You might prefer to minify using :compressed
   sass_dir: _sass
 
+baseurl: "/the-panic-room"
+
 version: v4.0.0
 
 # Use the following plug-ins
@@ -42,3 +44,4 @@ exclude:
   - CHANGELOG.md
   - README.md
   - CNAME
+  - vendor
