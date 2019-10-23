@@ -32,7 +32,7 @@ layout: default
 </style>
 <div id="main" class="container-fluid m-0 p-0">
     {% if page.cover %}
-        <div class="container-fluid hero-imagen m-0 p-0" style="background-image: url('{{ page.cover }}')">
+        <div class="container-fluid hero-imagen m-0 p-0" style="background-image: url('{{ page.cover | prepend: site.baseurl }}')">
             {% include nav.html %}
             <div class="row justify-content-end hero-footer py-5 px-3 m-0">
                 <div class="col-md-6">
@@ -50,9 +50,9 @@ layout: default
     {% endif %}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% link index.html %}">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="{{ site.baseurl }}{% link index.html %}">Inicio</a></li>
             {% for data in page.breadscrums %}
-            <li class="breadcrumb-item"><a href="{% link {{data.url}} %}">{{ data.name }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ data.url | prepend: site.baseurl }}">{{ data.name }}</a></li>
             {% endfor %}
             <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
         </ol>

@@ -31,6 +31,8 @@ baseurl: "/the-panic-room"
 
 version: v4.0.0
 
+timezone: America/Caracas
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
@@ -44,6 +46,7 @@ exclude:
   - CHANGELOG.md
   - README.md
   - CNAME
+  - [vendor]
   - node_modules
   - vendor/bundle/
   - vendor/cache/

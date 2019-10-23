@@ -1,11 +1,11 @@
 <div class="card pb-4">
     <div class="p-0 m-0 card-cover">
-        <img src="{{ include.post.cover }}" alt="{{ include.post.title }}">
+        <img src="{{ include.post.cover | prepend: site.baseurl }}" alt="{{ include.post.title }}">
     </div>
     <div class="card-body">
         <h5 class="card-title">{{ include.post.title }}</h5>
         <p class="card-text"><small class="text-muted">Posteado el {{ include.post.date | date: "%Y-%m-%d %H:%M" }}</small></p>
         <p class="card-text">{{ include.post.summary }}</p>
-        <a href="{{ include.post.url }}" class="btn btn-primary stretched-link">Ver  detalles</a>
+        <a href="{{ include.post.url | prepend: site.baseurl }}" class="btn btn-primary stretched-link">Ver  detalles</a>
     </div>
 </div>
