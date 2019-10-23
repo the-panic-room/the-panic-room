@@ -3,28 +3,28 @@
 #
 
 # Name of your site (displayed in the header)
-name: The Panic Room
+name: "The Panic Room"
 
 # Short bio or description (displayed in the header)
-description: En The Panic Room hacemos posible la integración del hardware y software para mejorar la experiencia del usuario basándonos en las tendencias tecnológicas.
-short_description: Full stack developers
+description: "En The Panic Room hacemos posible la integración del hardware y software para mejorar la experiencia del usuario basándonos en las tendencias tecnológicas."
+short_description: "Full stack developers"
 
 authors:
-  - Valentina Azócar
-  - Jhonny Mata
-  - Jesús Marín
-  - Jesús Rodríguez
-  - Carlos Gamardo
+  - "Valentina Azócar"
+  - "Jhonny Mata"
+  - "Jesús Marín"
+  - "Jesús Rodríguez"
+  - "Carlos Gamardo"
 
 collections:
   - teams
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-147132627-1
+google_analytics: "UA-147132627-1"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: ":compressed" # You might prefer to minify using :compressed
   sass_dir: _sass
 
 sitemap: true
@@ -39,5 +39,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - CHANGELOG.md
   - README.md
   - CNAME
