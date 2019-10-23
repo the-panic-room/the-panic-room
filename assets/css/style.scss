@@ -74,10 +74,12 @@ sitemap:
 .footer ul {
     overflow: hidden;
     margin: 0 !important;
+    padding: 0 !important;
 }
 .footer ul li {
-    float: left;
+    // float: left;
     // display: inline-block;
+    text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
     text-decoration: none;
