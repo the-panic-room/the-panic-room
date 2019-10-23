@@ -2,5 +2,5 @@
 username: javier_ed
 name: Javier Navarro
 position: Desarrollador back-end
-cover: https://www.gravatar.com/avatar/86a5f43adbde2f2f09648c217ad6cc77
+cover: https://avatars0.githubusercontent.com/u/4282637?s=250&v=4
 ---
