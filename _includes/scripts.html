@@ -29,8 +29,8 @@
     crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="{{'/assets/js/cache-polyfill.js' | prepend: site.baseurl }}"></script>
-{% for uri in page.scripts %}
-    <script type="text/javascript" src="{{ url | prepend: site.baseurl }}"></script>
+{% for uri in include.scripts %}
+    <script type="text/javascript" src="{{ uri | prepend: site.baseurl }}"></script>
 {% endfor %}
 <script>
     if ("serviceWorker" in navigator) {

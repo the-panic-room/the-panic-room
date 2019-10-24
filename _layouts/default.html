@@ -10,6 +10,6 @@
 </head>
 <body{% if layout.body_class %} class="{{ layout.body_class }}"{% endif %}>
     {{ content }}
-    {% include scripts.html %}
+    {% include scripts.html scripts=page.scripts %}
 </body>
 </html>
