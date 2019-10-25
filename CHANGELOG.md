@@ -1,6 +1,7 @@
 ## [Unreleased] 2019-10-25
 ### Added
 - Formulario de suscripcion.
+- Soporte de suscripcion con mailchimp.
 
 ### Changed
 - Ajustado footer response.
