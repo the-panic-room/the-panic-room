@@ -10,11 +10,11 @@ layout: default
                     <h1>{% if page.type == 'event' %}Evento: {% endif %}{{ page.cover_title | default:page.title }}</h1>
                     <p class="my-0">{{ page.summary }}</p>
                     {% if page.type == 'event' %}
-                    <div class="row">
-                        <div class="col-6"><i class="fas fa-calendar-alt" title="Fecha del evento"></i>
+                    <div class="row justify-content-end">
+                        <div class="col-auto"><i class="fas fa-calendar-alt" title="Fecha del evento"></i>
                         {{ page.date_init| date: "%Y-%m-%d" }}{% if page.date_end and page.date_end != page.date_init %} hasta
                         {{ page.date_end| date: "%Y-%m-%d" }}{% endif %}</div>
-                        <div class="col-6">
+                        <div class="col-auto">
                             <i class="fas fa-clock" title="Hora del evento"></i>
                             {{ page.time_init| date: "%I:%M %P" }}{% if page.time_end and page.time_end != page.time_init %} -
                             {{ page.time_end| date: "%I:%M %P" }}{% endif %}
@@ -36,7 +36,7 @@ layout: default
             <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
         </ol>
     </nav>
-    <div class="container container-page py-3 my-3 px-3">
+    <div class="container container-page p-5 my-5">
         {{ content }}
         {% if page.author %}
             <hr>

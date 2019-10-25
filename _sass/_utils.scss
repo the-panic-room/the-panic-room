@@ -1,5 +1,18 @@
+.container-page {
+    font-size: 1.25rem;
+    line-height: 2.15;
+    text-align: justify;
+}
+.container-page h1, .container-page h2, .container-page h3, .container-page strong {
+    color: #f4f4f4;
+}
+.container-page h1, .container-page h2, .container-page h3 {
+    margin-bottom: 1.3rem;
+}
+
 .container-page, .breadcrumb {
     background-color: #171717;
+    color: #aab1b7;
 }
 .breadcrumb .breadcrumb-item a{
     color: #9b4dca;
