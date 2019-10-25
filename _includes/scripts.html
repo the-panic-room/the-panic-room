@@ -38,4 +38,14 @@
             console.log("Service Worker Registered");
         });
     }
+    $(document).ready(function () {
+        $('.hero-imagen.cover nav#nav #menu').on('hidden.bs.collapse', function () {
+            // do something...
+            $(this).parent().removeClass("active")
+        })
+        $('.hero-imagen.cover nav#nav #menu').on('show.bs.collapse', function () {
+            // do something...
+            $(this).parent().addClass("active")
+        })
+    })
 </script>

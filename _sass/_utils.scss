@@ -1,0 +1,33 @@
+.container-page, .breadcrumb {
+    background-color: #171717;
+}
+.breadcrumb .breadcrumb-item a{
+    color: #9b4dca;
+}
+.breadcrumb .breadcrumb-item.active{
+    color: #aab1b7;
+}
+.hero-imagen {
+    width: 100%;
+    position: relative;
+    background-size: 100% 100% !important;
+}
+.hero-imagen.cover nav#nav {
+    background-image: linear-gradient(to bottom, #1a1a1aed 0%, rgba(0, 0, 0, 0) 100%);
+}
+.hero-imagen.cover nav#nav.active {
+    background-image: linear-gradient(to top, #000000ed 0%, #000c 100%);
+}
+.hero-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to top, #000 0%, rgba(0,0,0,.3) 100%);
+}
+.hero-footer, .hero-footer h1 {
+    font-weight: bold;
+    text-align: right;
+}
+nav#nav {
+    z-index: 10000;
+}
