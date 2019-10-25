@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 _site/
 .jekyll-cache/
+.sass-cache/
 
 # Editor directories and files
 .idea
