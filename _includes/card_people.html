@@ -6,6 +6,8 @@
         <h5 class="card-title">{{ include.person.name }}</h5>
         <p class="card-text">{{ include.person.position }}</p>
         <p class="card-text"><small class="text-muted">{{ include.person.summary }}</small></p>
-        <a href="#" class="btn btn-primary stretched-link">Ver  detalles</a>
+        {% if include.person.linkedin %}
+            <a href="{{ include.person.linkedin }}" class="btn btn-primary stretched-link" target="_blank">Ver  detalles</a>
+        {% endif %}
     </div>
 </div>

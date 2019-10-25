@@ -1,8 +1,9 @@
 ## [Unreleased] 2019-10-25
 ### Added
 - Formulario de suscripcion.
-- Vista de equipo de desarrollo.
+- Vista de equipo.
 - Soporte de suscripcion con mailchimp.
+- Listado de perfil en linkedin del equipo.
 
 ### Changed
 - Ajustado footer response.
