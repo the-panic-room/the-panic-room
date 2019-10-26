@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+    
+    <url>
+      <loc>http://localhost:4000/2019/10/21/scrum.html</loc>
+      
+        <lastmod>2019-10-21T10:00:00-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+    <url>
+      <loc>http://localhost:4000/blog.html</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/developers.html</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/assets/manifest.json</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/privacity.html</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/assets/js/sw.js</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/term.html</loc>
+      
+        <lastmod>2019-10-26T12:20:45-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+</urlset>
