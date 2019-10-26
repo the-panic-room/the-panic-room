@@ -9,6 +9,7 @@ layout: default
                 <div class="col-md-6">
                     <h1>{% if page.type == 'event' %}Evento: {% endif %}{{ page.cover_title | default:page.title }}</h1>
                     <p class="my-0">{{ page.summary }}</p>
+                    <p class="my-0">Lugar {{ page.place }}</p>
                     {% if page.type == 'event' %}
                     <div class="row justify-content-end">
                         <div class="col-auto"><i class="fas fa-calendar-alt" title="Fecha del evento"></i>
