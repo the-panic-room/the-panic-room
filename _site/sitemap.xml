@@ -8,7 +8,7 @@
 
     
     <url>
-      <loc>http://localhost:4000/2019/10/21/scrum.html</loc>
+      <loc>https://panicroom.tk/2019/10/21/scrum.html</loc>
       
         <lastmod>2019-10-21T10:00:00-04:00</lastmod>
       
@@ -24,24 +24,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/blog.html</loc>
+      <loc>https://panicroom.tk/blog.html</loc>
       
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/developers.html</loc>
-      
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -54,24 +39,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/</loc>
+      <loc>https://panicroom.tk/developers.html</loc>
       
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/assets/manifest.json</loc>
-      
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -84,9 +54,39 @@
   
     
     <url>
-      <loc>http://localhost:4000/privacity.html</loc>
+      <loc>https://panicroom.tk/</loc>
       
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://panicroom.tk/assets/manifest.json</loc>
+      
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://panicroom.tk/privacity.html</loc>
+      
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -103,24 +103,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/assets/js/sw.js</loc>
+      <loc>https://panicroom.tk/assets/js/sw.js</loc>
       
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/term.html</loc>
-      
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -133,9 +118,24 @@
   
     
     <url>
-      <loc>http://localhost:4000/feed.xml</loc>
+      <loc>https://panicroom.tk/term.html</loc>
       
-        <lastmod>2019-10-27T09:04:10-04:00</lastmod>
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://panicroom.tk/feed.xml</loc>
+      
+        <lastmod>2019-10-27T09:38:53-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
