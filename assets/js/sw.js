@@ -1,4 +1,6 @@
 ---
+sitemap:
+  exclude: 'yes'
 ---
 self.addEventListener("install", function(e) {
   e.waitUntil(
