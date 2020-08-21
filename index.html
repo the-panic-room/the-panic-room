@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: default
 title: Inicio
 keywords:
     - the panic room
@@ -14,7 +14,27 @@ keywords:
     - vue
 scripts:
     - /assets/js/utils.js
+landing:
+    image: hero-cover1
 ---
+<div id="main" class="container-fluid m-0 p-0">
+    <div class="container-fluid hero-imagen {{ page.landing.image }}">
+        {% include nav.html %}
+        <div class="row hero hero-container">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h1 class="py-2 py-md-4">
+                    Contratanos y haremos crecer tu negocio.
+                </h1>
+                <p class="hero-text" itemprop="description">
+                    Ofrecemos servicios enfocados en tus necesidades respaldados por nuestra evaluaci&oacute;n de calidad.
+                </p>
+                <a href="#contacto" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido -->
     <div id="info" class="container my-3">
         <h2>Nuestros servicios</h2>
         <div id="info" class="d-flex flex-column flex-md-row justify-content-center  align-items-md-stretch px-1 px-sm-3  px-md-0 py-3 border-bottom border-secondary flex-nowrap">
@@ -80,17 +100,17 @@ scripts:
         </div> -->
         <div class="row pt-4">
             <div class="col text-center">
-                <a class="btn-custom btn btn-tg btn-social link mr-0 mr-sm-2 mt-3 mt-sm-0" href="https://t.me/tpanicroom"
+                <a class="btn-custom btn-outline btn btn-tg btn-social link mr-0 mr-sm-2 mt-3 mt-sm-0" href="https://t.me/tpanicroom"
                     rel="noreferrer" target="_blank">
                     <img class="btn-icon" src="{{'/assets/images/telegram.webp' | prepend: site.baseurl }}" alt="Telegram" />
                     Telegram
                 </a>
-                <a class="btn-custom btn btn-ws btn-social link mr-sm-2  mt-3 mt-sm-0"
+                <a class="btn-custom btn-outline btn btn-ws btn-social link mr-sm-2  mt-3 mt-sm-0"
                     href="https://api.whatsapp.com/send?phone=584120835034" rel="noreferrer" target="_blank">
                     <img class="btn-icon" src="{{'/assets/images/whatsapp.webp' | prepend: site.baseurl }}" alt="Whatsapp" />
                     Whatsapp
                 </a>
-                <button class="btn-custom btn btn-yl btn-social link  mt-3 mt-sm-0"
+                <button class="btn-custom btn-outline btn btn-yl btn-social link  mt-3 mt-sm-0"
                     onclick="openMail()">
                     <i class="fas fa-envelope" title="Enviar un correo electr&oacute;nico"></i>
                     Correo
@@ -114,3 +134,5 @@ scripts:
             </div>
         </div>
     </div>
+</div>
+{% include footer.html %}

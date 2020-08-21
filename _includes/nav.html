@@ -1,33 +1,49 @@
 <!-- Menu de navegacion -->
-<nav id="nav" class="navbar navbar-expand-sm avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
-    <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
-        <img src="{{ '/assets/images/tpr.webp' | prepend: site.baseurl }}" class="logo" alt="The panic room" itemprop="logo" />
-    </a>
-    <button class="navbar-toggler ml-auto text-white" type="button" data-toggle="collapse" data-target="#menu"
+<nav id="nav" class="navbar navbar-expand-md avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
+    <button class="navbar-toggler text-white mr-3" type="button" data-toggle="collapse" data-target="#menu"
         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
     </button>
-
+    <a class="navbar-brand mr-auto" href="{{ site.baseurl }}{% link index.html %}">
+        <img src="{{ '/assets/images/tpr.webp' | prepend: site.baseurl }}" class="logo" alt="The panic room" itemprop="logo" />
+    </a>
     <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ml-auto d-flex justify-content-start align-items-sm-center mt-3 mt-sm-0">
+        <div class="nav-bg-menu" data-toggle="collapse" data-target="#menu"></div>
+        <button class="d-lg-none close" type="button" data-toggle="collapse"
+            data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="navbar-nav nav-actions">
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://www.linkedin.com/company/thepanicroom"
                     rel="noreferrer" class="pr-3">
                     <img src="{{ '/assets/images/linkedin.svg' | prepend: site.baseurl }}" alt="Linkedin" class="social-logo" />
-                    <span class="text-light d-inline d-sm-none ml-3">
-                        #teampanicroom
-                    </span>
                 </a>
             </li>
             <li class="nav-item pl-0 pl-sm-4">
                 <a class="nav-link" target="_blank" href="https://github.com/the-panic-room" rel="noreferrer"
                     class="pr-3">
                     <img src="{{ '/assets/images/github.svg' | prepend: site.baseurl }}" alt="Github" class="social-logo" />
-                    <span class="text-light d-inline d-sm-none ml-3">
-                        github.com/the-panic-room
-                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/company/thepanicroom"
+                    rel="noreferrer">
+                        Servicios
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/the-panic-room" rel="noreferrer">
+                    Productos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}{% link blog.html %}" rel="noreferrer">
+                    Blog
                 </a>
             </li>
         </ul>
