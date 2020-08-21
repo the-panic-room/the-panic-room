@@ -1,10 +1,11 @@
 /* navbar */
 .navbar {
-    padding-top: 2em;
+    padding-top: 1em;
     margin-bottom: 1em;
     color: white;
     display: flex;
     justify-content: space-between;
+    @include property-prefix(transition, background-color ease-out .5s);
 }
 .nav-menu {
 	display: flex;
@@ -20,6 +21,19 @@
     	}
 	}
 }
+body.header-fixed {
+	.navbar {
+		position: fixed;
+		width: 100%;
+		background-color: #1c1c1c;
+		top: 0;
+		left: 0;
+		& + .hero {
+		    margin-top: 5rem;
+		}
+	}
+}
+
 @include tablet-down {
 	$padding_x: 2rem;
 	.navbar-expand-md .navbar-collapse {
@@ -34,11 +48,7 @@
 		z-index: 10000;
 		height: 100vh !important;
 		max-width: 90%;
-		-webkit-transition: left linear .5s;
-		   -moz-transition: left linear .5s;
-		    -ms-transition: left linear .5s;
-		     -o-transition: left linear .5s;
-		        transition: left linear .5s;
+		@include property-prefix(transition, left linear .5s);
 		.nav-bg-menu {
 			display: block;
 			position: fixed;

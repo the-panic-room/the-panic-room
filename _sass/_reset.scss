@@ -8,8 +8,8 @@ body {
     color: $text-color;
     font-family: $font-family;
     // max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     font-size: map-get($text-size, desktop);
 }
 @include tablet-down {

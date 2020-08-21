@@ -1,3 +1,11 @@
+@mixin property-prefix($property, $value) {
+	-webkit-#{$property}: $value;
+	   -moz-#{$property}: $value;
+	    -ms-#{$property}: $value;
+	     -o-#{$property}: $value;
+	        #{$property}: $value;
+}
+
 @mixin mobile-only() {
 	$breakpoint: map-get($grid-breakpoints, md) - .02;
 	@media (max-width: $breakpoint) {

@@ -3,20 +3,22 @@
     font-size: 0.7rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
+    font-weight: bold;
     color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
+.btn-small {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 .btn-outline {
     border-color: white;
 }
-
 .btn-primary {
     background: #9b4dca !important;
     border: none !important
 }
-
 .btn-link {
     padding: 1rem 3rem;
     background: none;
