@@ -1,14 +1,19 @@
-
 html {
     scroll-behavior:smooth;
 }
 
 body {
     margin: 0;
-    background-color: #202020;
-    color: white;
-    font-family: 'Cabin', sans-serif !important;
-    max-width: 1600px;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $font-family;
+    // max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    font-size: map-get($text-size, desktop);
+}
+@include tablet-down {
+	html, body {
+    	font-size: map-get($text-size, mobile);
+	}
 }

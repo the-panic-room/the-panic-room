@@ -1,16 +1,18 @@
 /* buttons */
 .btn-custom {
-    font-size: 0.7rem !important;
-    font-weight: 700 !important;
-    height: 40px;
+    font-size: 0.7rem;
     letter-spacing: .1rem;
-    padding: 0 24px !important;
     text-transform: uppercase;
-    border-color: white;
     color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.btn-primary { 
+.btn-outline {
+    border-color: white;
+}
+
+.btn-primary {
     background: #9b4dca !important;
     border: none !important
 }
@@ -24,8 +26,6 @@
 
 .btn-main {
     border: none;
-    height: 48px;
-    line-height: 4.4em;
     background-size: 150% auto;
     background-image: linear-gradient(to right, #9b4dca 0%, rgb(78, 69, 197) 51%, rgb(41, 125, 194) 100%);
 }
@@ -35,7 +35,7 @@
     background-image: linear-gradient(to right, #c334d6 0%, #9b4dca 20%, rgb(78, 69, 197) 50%);
 }
 
-.btn-social { 
+.btn-social {
     line-height: 3.3em ;
 }
 
@@ -43,14 +43,14 @@
     background: rgba(30, 75, 117, 0.438);
 }
 
-.btn-ws:hover { 
+.btn-ws:hover {
     background: rgba(38, 138, 91, 0.281) ;
 }
 
-.btn-yl:hover { 
+.btn-yl:hover {
     background: rgba(138, 127, 38, 0.28);
 }
-.btn-rd:hover { 
+.btn-rd:hover {
     background: rgba(138, 47, 38, 0.28);
 }
 

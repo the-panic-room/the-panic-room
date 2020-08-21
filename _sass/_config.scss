@@ -1,0 +1,19 @@
+$bg-color: #202020;
+$text-color: white;
+$font-family: 'Cabin', 'sans-serif';
+
+$text-size: (
+	desktop: 14px,
+	mobile: 13px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+/* header */
+$border-line-link: .1rem;

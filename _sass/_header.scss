@@ -1,0 +1,108 @@
+/* navbar */
+.navbar {
+    padding-top: 2em;
+    margin-bottom: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu {
+	display: flex;
+	justify-content: flex-start;
+	.nav-item, .nav-item a {
+		color: white !important;
+	}
+	.nav-item {
+		font-size: 1.25rem;
+		font-weight: bold;
+		.nav-link:hover, .nav-link:active, .nav-link:focus {
+    		border-bottom: $border-line-link solid white;
+    	}
+	}
+}
+@include tablet-down {
+	$padding_x: 2rem;
+	.navbar-expand-md .navbar-collapse {
+		position: fixed;
+		background-color: #313131;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: $padding_x;
+		top: 0;
+		left: 0;
+		color: white;
+		z-index: 10000;
+		height: 100vh !important;
+		max-width: 90%;
+		-webkit-transition: left linear .5s;
+		   -moz-transition: left linear .5s;
+		    -ms-transition: left linear .5s;
+		     -o-transition: left linear .5s;
+		        transition: left linear .5s;
+		.nav-bg-menu {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, .35);
+			z-index: -1;
+			cursor: pointer;
+		}
+		.close {
+			color: white;
+			font-size: 2.5rem;
+			margin-top: -1rem;
+			margin-right: 1rem;
+		}
+		// &.collapsing .nav-bg-menu, &.collapse:not(.show) .nav-bg-menu {
+		// 	display: none;
+		// }
+		&.collapsing {
+			left: calc(-90% - #{$padding_x * 2});
+		}
+		.nav-actions {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+			padding-right: 1rem;
+			.nav-item {
+			    margin-left: 10px;
+			    margin-right: 10px;
+				margin-bottom: $border-line-link;
+			}
+		}
+		// &.collapse:not(.show) {
+		//     right: calc(-90% - #{$padding_x * 2});
+		// }
+	}
+	.nav-menu {
+		margin-top: 2rem;
+		padding-right: $padding_x;
+	    display: block;
+	    .nav-item {
+	    	margin-top: 1rem;
+			margin-bottom: 1rem;
+	    }
+	}
+}
+@include desktop-up {
+	.nav-menu {
+		margin-left: auto;
+		order: 1;
+		.nav-item {
+		    margin-left: 1.25rem;
+		}
+		.nav-bg-menu {
+			display: none !important;
+		}
+	}
+	.nav-actions {
+		order: 2;
+		margin-left: 2rem;
+	}
+}

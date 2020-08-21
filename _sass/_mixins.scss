@@ -1,0 +1,70 @@
+@mixin mobile-only() {
+	$breakpoint: map-get($grid-breakpoints, md) - .02;
+	@media (max-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin mobile-up() {
+	$breakpoint: map-get($grid-breakpoints, sm);
+	@media (min-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin tablet-only() {
+	$min: map-get($grid-breakpoints, md);
+	$max: map-get($grid-breakpoints, lg) - .02;
+	@media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+}
+
+@mixin tablet-up() {
+	$breakpoint: map-get($grid-breakpoints, md);
+	@media (min-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin tablet-down() {
+	$breakpoint: map-get($grid-breakpoints, lg) - .02;
+	@media (max-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin desktop-only() {
+	$min: map-get($grid-breakpoints, lg);
+	$max: map-get($grid-breakpoints, xl) - .02;
+	@media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+}
+
+@mixin desktop-up() {
+	$breakpoint: map-get($grid-breakpoints, lg);
+	@media (min-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin desktop-down() {
+	$breakpoint: map-get($grid-breakpoints, xl) - .02;
+	@media (max-width: $breakpoint) {
+      @content;
+    }
+}
+
+@mixin tv-only() {
+	@include tv-up {
+      @content;
+  	}
+}
+
+@mixin tv-up() {
+	$breakpoint: map-get($grid-breakpoints, xl);
+	@media (min-width: $breakpoint) {
+      @content;
+    }
+}
