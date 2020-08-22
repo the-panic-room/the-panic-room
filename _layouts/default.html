@@ -10,6 +10,21 @@
 </head>
 <body{% if layout.body_class %} class="{{ layout.body_class }}"{% endif %}>
     {{ content }}
+    <div class="cookie-consent collapse" id="cookie-consent">
+    	<button class="close" type="button" data-toggle="collapse"
+            data-target="#cookie-consent" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="clearfix py-1"></div>
+        <div class="row justify-content-between align-items-center px-2 pb-1 w-100">
+        	<div class="col-md-9 message">
+        		Acepta los terminos
+        	</div>
+        	<div class="col-md-3">
+        		<button class="btn-custom btn btn-main btn-block link" id="accept">Aceptar</button>
+        	</div>
+        </div>
+    </div>
     {% include scripts.html scripts=page.scripts %}
 </body>
 </html>

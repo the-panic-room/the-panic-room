@@ -114,3 +114,30 @@ sitemap:
         font-size: 1.4rem;
     }
 }
+
+.cookie-consent {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1c1c1c;
+    .close {
+        color: white;
+        font-size: 2rem;
+        margin-top: -1rem;
+        margin-right: -1rem;
+        @include tablet-down {
+            & {
+                font-size: 3rem;
+            }
+        }
+    }
+    .message {
+        text-align: center;
+        font-size: 1rem;
+    }
+}

@@ -10,5 +10,13 @@
 				document.body.classList.remove('header-fixed');
 			}
 		});
+		var cookieIsAccept = sessionStorage.getItem('cookie-consent-accept');
+		if (!cookieIsAccept) {
+			$('#cookie-consent').collapse('show');
+		}
+		$('#accept').on('click', function () {
+			sessionStorage.setItem('cookie-consent-accept', true);
+			$('#cookie-consent').collapse('hide');
+		});
 	});
 })();
