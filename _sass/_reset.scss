@@ -16,4 +16,11 @@ body {
 	html, body {
     	font-size: map-get($text-size, mobile);
 	}
+  .footer{
+    padding: 26px 0px
+  }
+  .footer li {
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+  }
 }
