@@ -12,3 +12,16 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.index{
+  font-size: 1.2em;
+}
+
+@media (max-width: 699px) {
+  .item-footer {
+      margin-bottom: 1rem;
+      font-size: 1.1em;
+  }
+  .footer{
+    padding: 32px 0px;
+  }
+}

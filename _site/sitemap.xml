@@ -8,7 +8,7 @@
 
     
     <url>
-      <loc>https://panicroom.tk/2019/10/21/scrum.html</loc>
+      <loc>http://localhost:4000/2019/10/21/scrum.html</loc>
       
         <lastmod>2019-10-21T10:00:00-04:00</lastmod>
       
@@ -24,24 +24,9 @@
   
     
     <url>
-      <loc>https://panicroom.tk/blog.html</loc>
+      <loc>http://localhost:4000/blog.html</loc>
       
-        <lastmod>2019-10-29T08:06:04-04:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://panicroom.tk/developers.html</loc>
-      
-        <lastmod>2019-10-29T08:06:04-04:00</lastmod>
+        <lastmod>2020-08-23T11:04:33-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -54,9 +39,9 @@
   
     
     <url>
-      <loc>https://panicroom.tk/</loc>
+      <loc>http://localhost:4000/developers.html</loc>
       
-        <lastmod>2019-10-29T08:06:04-04:00</lastmod>
+        <lastmod>2020-08-23T11:04:33-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -68,12 +53,10 @@
     
   
     
-  
-    
     <url>
-      <loc>https://panicroom.tk/privacity.html</loc>
+      <loc>http://localhost:4000/</loc>
       
-        <lastmod>2019-10-29T08:06:04-04:00</lastmod>
+        <lastmod>2020-08-23T11:04:33-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -87,14 +70,31 @@
     
   
     
+    <url>
+      <loc>http://localhost:4000/privacity.html</loc>
+      
+        <lastmod>2020-08-23T11:04:33-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
   
     
   
     
     <url>
-      <loc>https://panicroom.tk/term.html</loc>
+      <loc>http://localhost:4000/term.html</loc>
       
-        <lastmod>2019-10-29T08:06:04-04:00</lastmod>
+        <lastmod>2020-08-23T11:04:33-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -107,9 +107,9 @@
   
     
     <url>
-      <loc>https://panicroom.tk/feed.xml</loc>
+      <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2019-10-29T08:06:04-04:00</lastmod>
+        <lastmod>2020-08-23T11:04:33-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
