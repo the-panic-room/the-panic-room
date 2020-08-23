@@ -13,6 +13,13 @@
     }
 }
 
+@mixin mobile-small() {
+	$breakpoint: map-get($grid-breakpoints, sm) - .02;
+	@media (max-width: $breakpoint) {
+      @content;
+    }
+}
+
 @mixin mobile-up() {
 	$breakpoint: map-get($grid-breakpoints, sm);
 	@media (min-width: $breakpoint) {

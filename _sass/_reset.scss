@@ -24,3 +24,10 @@ body {
       margin-bottom: 1rem;
   }
 }
+
+@include mobile-small {
+  .socials{
+    display: flex;
+    flex-direction: column;
+  }
+}
