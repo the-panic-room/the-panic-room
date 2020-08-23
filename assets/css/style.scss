@@ -10,6 +10,7 @@ sitemap:
 @import "utils";
 @import "header";
 @import "hero";
+@import "card";
 
 
 .logo { max-height: 50px; width: auto }
@@ -27,14 +28,7 @@ sitemap:
 /* main section */
 
 
-/* cards */
-.card {
-    background: rgb(24, 24, 26);
-    text-align: center
-}
-.card-title {
-    color: #9b4dca
-}
+
 
 /* footer */
 .footer {
