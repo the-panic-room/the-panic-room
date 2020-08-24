@@ -13,10 +13,10 @@ sitemap:
 @import "card";
 
 
-.logo { max-height: 50px; width: auto }
+.logo { max-height: 50px; width: auto; }
 
-.navbar-toggler {border-color: rgb(255, 255, 255) }
-.navbar-toggler:focus { outline: none }
+.navbar-toggler {border-color: rgb(255, 255, 255); }
+.navbar-toggler:focus { outline: none; }
 .line {
     display: block;
     background: white;

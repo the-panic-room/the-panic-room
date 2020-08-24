@@ -8,6 +8,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .btn-small {
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -15,6 +16,7 @@
 .btn-outline {
     border-color: white;
 }
+
 .btn-primary {
     background: #9b4dca !important;
     border: none !important
@@ -80,4 +82,26 @@
 .social-logo {
     height: 50px;
     width: auto;
+}
+
+.btn-spacin{
+  padding-bottom: 1rem;
+
+}
+
+.btn_full{
+  width: 100%;
+}
+.ico_email{
+  padding-right: 1.5em;
+}
+
+@include tablet-down {
+    .btn-control {
+        display: block;
+        width: 100%;
+    }
+    .btn-custom {
+        font-size: 1rem;
+    }
 }

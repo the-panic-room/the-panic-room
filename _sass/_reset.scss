@@ -16,4 +16,12 @@ body {
 	html, body {
     	font-size: map-get($text-size, mobile);
 	}
+  .item-footer {
+      margin-bottom: 1rem;
+      font-size: 1.1em;
+  }
+  .footer{
+    padding: 32px 0px;
+  }
 }
+
