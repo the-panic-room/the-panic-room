@@ -1,4 +1,17 @@
-## [Unreleased] 2019-10-25
+## [Unreleased] 2020-08-25
+
+### Added
+
+- Header fixed con menu horizontal responsive
+- botones de enlaces a los servicios.
+
+### Fixed
+
+- tamaño de fuentes pequeñas en los cards
+- botonos de contactos cambian a block en dispositivos moviles.
+- margen superior en los enlaces del footer.
+
+## [0.0.1] 2019-10-25
 ### Added
 - Formulario de suscripcion.
 - Vista de equipo.

@@ -35,23 +35,25 @@ scripts:
     <!-- Contenido -->
     <div id="info" class="container-fluid my-3 font-base">
         <h2>Nuestros servicios</h2>
-        <div id="info" class="d-flex flex-column flex-md-row justify-content-center  align-items-md-stretch px-1 px-sm-3  px-md-0 py-3 border-bottom border-secondary flex-nowrap">
+        <div id="info" class="d-flex flex-column flex-md-row justify-content-center  align-items-md-stretch px-1 px-sm-3  px-md-0 py-3 flex-nowrap border-bottom border-secondary">
             <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
-                <div class="py-3">
-                    <img src="{{ '/assets/images/diseño.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
+                <div class="card-img-top py-3">
+                    <img src="{{ '/assets/images/diseño.svg' | prepend: site.baseurl }}" alt="" width="115" height="115">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Diseño Web</h5>
                     <p class="card-text">Proponemos diversos modelos ilustrativos enfocados a su negocio. Ofreciendo un producto adaptable desde ordenadores de
                     escritorios hasta dispositivos móviles, implementando mejoras continúas de acuerdo a la interacción con el cliente y sus
                     necesidades.</p>
+                </div>
+                <div class="card-footer">
                     <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
                         Ver detalle
                     </a>
                 </div>
             </div>
             <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
-                <div class="py-3">
+                <div class="card-img-top py-3">
                     <img src="{{ '/assets/images/software.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
                 </div>
                 <div class="card-body">
@@ -59,9 +61,14 @@ scripts:
                     <p class="card-text">Desarrollamos aplicaciones multiplataformas con base a las necesidades del cliente, que se integran con una gran
                     variedad de dispositivos y sistemas operativos: en versión Web, Smartphones, Tablets, Windows y Linux.</p>
                 </div>
+                <div class="card-footer">
+                    <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
             </div>
             <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
-                <div class="py-3">
+                <div class="card-img-top py-3">
                     <img src="{{ '/assets/images/hardware.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
                 </div>
                 <div class="card-body">
@@ -69,6 +76,11 @@ scripts:
                     <p class="card-text">Apoyamos sus ideas desarrollando el hardware que respondan las preguntas críticas de su negocio. Elaborando nuevos
                     productos tecnológicos que satisfacen las necesidades de los usuarios llevando sus ideas a la realidad. Fusionamos
                     creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
                 </div>
             </div>
         </div>
