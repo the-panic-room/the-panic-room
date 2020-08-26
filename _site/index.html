@@ -29,6 +29,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/192.png" />
 <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/splahs.png" />
     <link rel="manifest" href="/assets/manifest.json" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap">
 <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 <script src="https://kit.fontawesome.com/fbd55178fa.js" crossorigin="anonymous"></script>
@@ -47,173 +48,190 @@
 </head>
 <body>
     <div id="main" class="container-fluid m-0 p-0">
-    <div class="container-fluid hero-imagen">
+    <div class="container-fluid hero-imagen hero-cover1">
         <!-- Menu de navegacion -->
-<nav id="nav" class="navbar navbar-expand-sm avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
-    <a class="navbar-brand" href="/">
-        <img src="/assets/images/tpr.webp" class="logo" alt="The panic room" itemprop="logo" />
-    </a>
-    <button class="navbar-toggler ml-auto text-white" type="button" data-toggle="collapse" data-target="#menu"
+<nav id="nav" class="navbar navbar-expand-md avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
+    <button class="navbar-toggler text-white mr-3" type="button" data-toggle="collapse" data-target="#menu"
         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
     </button>
-
+    <a class="navbar-brand mr-auto" href="/">
+        <img src="/assets/images/tpr.webp" class="logo" alt="The panic room" itemprop="logo" />
+    </a>
     <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ml-auto d-flex justify-content-start align-items-sm-center mt-3 mt-sm-0">
+        <div class="nav-bg-menu" data-toggle="collapse" data-target="#menu"></div>
+        <button class="d-lg-none close" type="button" data-toggle="collapse"
+            data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="navbar-nav nav-actions">
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://www.linkedin.com/company/thepanicroom"
                     rel="noreferrer" class="pr-3">
                     <img src="/assets/images/linkedin.svg" alt="Linkedin" class="social-logo" />
-                    <span class="text-light d-inline d-sm-none ml-3">
-                        #teampanicroom
-                    </span>
                 </a>
             </li>
-            <li class="nav-item pl-0 pl-sm-4">
+            <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://github.com/the-panic-room" rel="noreferrer"
                     class="pr-3">
                     <img src="/assets/images/github.svg" alt="Github" class="social-logo" />
-                    <span class="text-light d-inline d-sm-none ml-3">
-                        github.com/the-panic-room
-                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="/services.html"
+                    rel="noreferrer">
+                        Servicios
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="https://github.com/the-panic-room" rel="noreferrer">
+                    Productos
+                </a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="/blog.html" rel="noreferrer">
+                    Blog
                 </a>
             </li>
         </ul>
     </div>
 </nav>
-        <div id="hero" class="row">
-            <div class="col-12 col-sm-6 col-lg-3 hero">
-                <div>
-                    <h1 class="py-2 py-md-4">
-                        Contratanos y haremos crecer tu negocio.
-                    </h1>
-                    <p class="hero-text texto" itemprop="description">
-                        Ofrecemos servicios enfocados en tus necesidades respaldados por nuestra evaluaci&oacute;n de calidad.
-                    </p>
-                    <a href="#contacto" class="btn-custom btn btn-main link my-2 my-md-4">
-                        Contáctanos
+        <div class="row hero hero-container">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h1 class="py-2 py-md-4">
+                    Contratanos y haremos crecer tu negocio.
+                </h1>
+                <p class="hero-text" itemprop="description">
+                    Ofrecemos servicios enfocados en tus necesidades respaldados por nuestra evaluaci&oacute;n de calidad.
+                </p>
+                <a href="#contacto" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido -->
+    <div id="info" class="container-fluid my-3 font-base">
+        <h2>Nuestros servicios</h2>
+        <div id="info" class="d-flex flex-column flex-md-row justify-content-center  align-items-md-stretch px-1 px-sm-3  px-md-0 py-3 flex-nowrap border-bottom border-secondary">
+            <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="/assets/images/diseño.svg" alt="" width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Diseño Web</h5>
+                    <p class="card-text">Proponemos diversos modelos ilustrativos enfocados a su negocio. Ofreciendo un producto adaptable desde ordenadores de
+                    escritorios hasta dispositivos móviles, implementando mejoras continúas de acuerdo a la interacción con el cliente y sus
+                    necesidades.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/services/design.html" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
+            </div>
+            <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="/assets/images/software.svg" alt="..." width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de Software</h5>
+                    <p class="card-text">Desarrollamos aplicaciones multiplataformas con base a las necesidades del cliente, que se integran con una gran
+                    variedad de dispositivos y sistemas operativos: en versión Web, Smartphones, Tablets, Windows y Linux.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/services/design.html" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
+            </div>
+            <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="/assets/images/hardware.svg" alt="..." width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de Hardware</h5>
+                    <p class="card-text">Apoyamos sus ideas desarrollando el hardware que respondan las preguntas críticas de su negocio. Elaborando nuevos
+                    productos tecnológicos que satisfacen las necesidades de los usuarios llevando sus ideas a la realidad. Fusionamos
+                    creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/services/design.html" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contenido -->
-    <div class="index">
-  <div id="info" class="container my-3">
-    <h2>Nuestros servicios</h2>
-    <div id="info" class="d-flex flex-column flex-md-row justify-content-center align-items-md-stretch px-1 px-sm-3  px-md-0 py-3 border-bottom border-secondary flex-nowrap">
-      <div class="card py-4 col-12 col-md-4 mb-3 mx-0 mx-md-1 mx-lg-3">
-        <div class="py-3">
-          <img src="/assets/images/diseño.svg" alt="..." width="115" height="115">
-        </div>
-        <div class="card-body" >
-          <h5 class="card-title">Diseño Web</h5>
-          <p kb>Proponemos diversos modelos ilustrativos enfocados a su negocio. Ofreciendo un producto adaptable desde ordenadores de
-            escritorios hasta dispositivos móviles, implementando mejoras continúas de acuerdo a la interacción con el cliente y sus
-            necesidades.</p>
-          </div>
-        </div>
-        <div class="card py-4 col-12 col-md-4 mb-3 mx-0 mx-md-1 mx-lg-3">
-          <div class="py-3">
-            <img src="/assets/images/software.svg" alt="..." width="115" height="115">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Desarrollo de Software</h5>
-            <p class="card-text">Desarrollamos aplicaciones multiplataformas con base a las necesidades del cliente, que se integran con una gran
-              variedad de dispositivos y sistemas operativos: en versión Web, Smartphones, Tablets, Windows y Linux.</p>
-            </div>
-          </div>
-          <div class="card py-4 col-12 col-md-4 mb-3 mx-0 mx-md-1 mx-lg-3">
-            <div class="py-3">
-              <img src="/assets/images/hardware.svg" alt="..." width="115" height="115">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Desarrollo de Hardware</h5>
-              <p class="card-text">Apoyamos sus ideas desarrollando el hardware que respondan las preguntas críticas de su negocio. Elaborando nuevos
-                productos tecnológicos que satisfacen las necesidades de los usuarios llevando sus ideas a la realidad. Fusionamos
-                creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="contacto" class="container py-5">
-          <!-- <div id='contactForm"' class="row">
+    <div id="contacto" class="container py-5">
+        <!-- <div id='contactForm"' class="row">
             <div class="col">
-              <form action="">
-                <div class="container">
-                  <h1>Get in!</h1>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-6 pt-3">
-                      <label for="mail">Tu correo</label>
-                      <input class="w-100" type="email" id="mail">
+                <form action="">
+                    <div class="container">
+                        <h1>Get in!</h1>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 pt-3">
+                                <label for="mail">Tu correo</label>
+                                <input class="w-100" type="email" id="mail">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 pt-3">
+                                <label for="nombre">Nombre</label>
+                                <input class="w-100" type="text" id="nombre">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <label for="contenido">Contenido</label>
+                                <textarea class="w-100" name="contenido" id="contenido" rows="5"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 pt-3">
-                      <label for="nombre">Nombre</label>
-                      <input class="w-100" type="text" id="nombre">
-                    </div>
-                  </div>
-                  <div class="row mt-4">
-                    <div class="col">
-                      <label for="contenido">Contenido</label>
-                      <textarea class="w-100" name="contenido" id="contenido" rows="5"></textarea>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
             </div>
-          </div> -->
-
-          <div class="d-flex justify-content-center">
-            <div class="row">
-              <div class="col-sm-auto ">
-                <a class="btn-custom btn_full btn btn-tg btn-social link mr-0 mr-sm-2 mt-3 mt-sm-0" href="https://t.me/tpanicroom"
-                rel="noreferrer" target="_blank">
-                <img class="btn-icon" src="/assets/images/telegram.webp" alt="Telegram" />
-                Telegram
-              </a>
-            </div>
-
-            <div class="col-sm-auto mr-0 ">
-              <a class="btn-custom btn_full btn btn-ws btn-social link mr-sm-2  mt-3 mt-sm-0"
+        </div> -->
+        <div class="row pt-4 justify-content-center align-items-center">
+          <div class="col-md-auto p-md-0">
+            <a class="btn-custom btn-outline btn-small btn btn-tg btn-social link mr-0 mr-sm-2 mt-3 mt-sm-0 btn-control" href="https://t.me/tpanicroom" rel="noreferrer" target="_blank">
+              <img class="btn-icon" src="/assets/images/telegram.webp" alt="Telegram" />
+              Telegram
+            </a>
+          </div>
+          <div class="col-md-auto p-md-0">
+            <a class="btn-custom btn-outline btn-small btn btn-ws btn-social link mr-sm-2  mt-3 mt-sm-0 btn-control"
               href="https://api.whatsapp.com/send?phone=584120835034" rel="noreferrer" target="_blank">
               <img class="btn-icon" src="/assets/images/whatsapp.webp" alt="Whatsapp" />
               Whatsapp
             </a>
           </div>
-
-          <div class="col-sm-auto mr-0 ">
-            <button class="btn-custom btn_full btn_email btn btn-yl btn-social link mt-3 mt-sm-0"
-            onclick="openMail()">
-            <i class="fas fa-envelope ico_email" title="Enviar un correo electr&oacute;nico"></i>
-            Correo
-          </button>
+          <div class="col-md-auto p-md-0">
+            <button class="btn-custom btn-outline btn-small btn btn-yl btn-social link  mt-3 mt-sm-0 btn-control"
+              onclick="openMail()">
+              <i class="fas fa-envelope" title="Enviar un correo electr&oacute;nico"></i>
+              Correo
+            </button>
+          </div>
         </div>
-      </div>
+        <div class="row pt-4">
+            <div class="col text-center">
+                <a href="https://www.linkedin.com/company/thepanicroom" rel="noreferrer" class="pr-2 align-bottom btn-touch"
+                    target="_blank">
+                    <img src="/assets/images/linkedin.svg" alt="Linkedin" class="social-logo"/>
+                </a>
+                <a href="https://github.com/the-panic-room" rel="noreferrer" class="pr-2 align-bottom btn-touch"
+                    target="_blank">
+                    <img src="/assets/images/github.svg" alt="Github" class="social-logo" />
+                </a>
+                <a href="https://www.facebook.com/tpanicroom/" rel="noreferrer" class="align-bottom btn-touch"
+                    target="_blank">
+                    <img src="/assets/images/facebook.svg" alt="Facebook" class="social-logo" />
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="row pt-4">
-    <div class="col text-center">
-      <a href="https://www.linkedin.com/company/thepanicroom" rel="noreferrer" class="pr-2 align-bottom btn-touch"
-      target="_blank">
-      <img src="/assets/images/linkedin.svg" alt="Linkedin" class="social-logo"/>
-    </a>
-    <a href="https://github.com/the-panic-room" rel="noreferrer" class="pr-2 align-bottom btn-touch"
-    target="_blank">
-    <img src="/assets/images/github.svg" alt="Github" class="social-logo" />
-  </a>
-  <a href="https://www.facebook.com/tpanicroom/" rel="noreferrer" class="align-bottom btn-touch"
-  target="_blank">
-  <img src="/assets/images/facebook.svg" alt="Facebook" class="social-logo" />
-</a>
-</div>
-</div>
-</div>
-  
-</div>
-
 </div>
 <div class="footer container-fluid">
     <div class=" d-flex flex-column flex-sm-row justify-content-end align-items-center flex-nowrap">
@@ -256,8 +274,21 @@
         </div>
     </div>
 </div>
-
-
+    <div class="cookie-consent collapse" id="cookie-consent">
+    	<button class="close" type="button" data-toggle="collapse"
+            data-target="#cookie-consent" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="clearfix py-1"></div>
+        <div class="row justify-content-between align-items-center px-2 pb-1 w-100">
+        	<div class="col-md-9 message">
+        		Su experiencia en este sitio será mejorada con el uso de cookies.
+        	</div>
+        	<div class="col-md-3">
+        		<button class="btn-custom btn btn-main btn-block link" id="accept">Aceptar</button>
+        	</div>
+        </div>
+    </div>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -289,6 +320,7 @@
     crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="/assets/js/cache-polyfill.js"></script>
+<script type="text/javascript" src="/assets/js/navbar.js"></script>
 
     <script type="text/javascript" src="/assets/js/utils.js"></script>
 
