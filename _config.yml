@@ -43,6 +43,7 @@ collections:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: "UA-147132627-1"
+google_recaptcha: "6LcfW8QZAAAAAA18RVrLM66IgsJzo0qB1MZw6vj2"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -59,8 +60,8 @@ timezone: America/Caracas
 # theme: minima
 plugins:
   - jekyll-feed
-  # - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  # - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,7 +1,11 @@
-## [Unreleased] 2020-08-25
+## [Unreleased] 2020-08-28
 
 ### Added
 
+- pagina de servicios
+- Formulario de contacto con sendinblue
+- Integración recaptcha
+- Integración hotjar
 - Header fixed con menu horizontal responsive
 - botones de enlaces a los servicios.
 
