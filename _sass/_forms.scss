@@ -35,6 +35,10 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 	border: solid 2px #999;
 }
 
+.form-control.subscribe:invalid {
+    box-shadow: none;
+}
+
 .sib-sms-select__title::after {
 	border-top: 5px solid #fbfbfb;
 	right: 10px;

@@ -12,9 +12,14 @@ layout: default
                     <p class="my-0">Lugar {{ page.place }}</p>
                     {% if page.type == 'event' %}
                     <div class="row justify-content-end">
-                        <div class="col-auto"><i class="fas fa-calendar-alt" title="Fecha del evento"></i>
-                        {{ page.date_init| date: "%Y-%m-%d" }}{% if page.date_end and page.date_end != page.date_init %} hasta
-                        {{ page.date_end| date: "%Y-%m-%d" }}{% endif %}</div>
+                        <div class="col-auto">
+                            {% if page.completed %}
+                                    <span class="badge badge-pill badge-success">Completado</span>
+                            {% endif %}
+                            <i class="fas fa-calendar-alt" title="Fecha del evento"></i>
+                            {{ page.date_init| date: "%Y-%m-%d" }}{% if page.date_end and page.date_end != page.date_init %} hasta
+                            {{ page.date_end| date: "%Y-%m-%d" }}{% endif %}
+                        </div>
                         <div class="col-auto">
                             <i class="fas fa-clock" title="Hora del evento"></i>
                             {{ page.time_init| date: "%I:%M %P" }}{% if page.time_end and page.time_end != page.time_init %} -
@@ -29,7 +34,7 @@ layout: default
         {% include nav.html %}
     {% endif %}
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb py-3">
             <li class="breadcrumb-item"><a href="{{ site.baseurl }}{% link index.html %}">Inicio</a></li>
             {% for data in page.breadscrums %}
             <li class="breadcrumb-item"><a href="{{ data.url | prepend: site.baseurl }}">{{ data.name }}</a></li>
