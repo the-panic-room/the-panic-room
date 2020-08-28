@@ -2,6 +2,10 @@
 
 ### Added
 
+- pagina de confirmación de la subscripción a los anuncios.
+- pagina de confirmación de la subscripción para contactar.
+- eventos posteados del blog pueden marcarse como completados.
+- Nuevos iconos svg
 - pagina de servicios
 - Formulario de contacto con sendinblue
 - Integración recaptcha
@@ -9,8 +13,17 @@
 - Header fixed con menu horizontal responsive
 - botones de enlaces a los servicios.
 
+### Changed
+
+- color de los iconos.
+
+
 ### Fixed
 
+- desajustes de cajas de servicios del landing en breakpoints xl.
+- desajuste de la imagen de fondo en tablets y telefonos con breakpoints md.
+- Incremento de letras en tarjetas y hero.
+- hero se sale del tamaño del body
 - tamaño de fuentes pequeñas en los cards
 - botonos de contactos cambian a block en dispositivos moviles.
 - margen superior en los enlaces del footer.

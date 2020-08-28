@@ -84,16 +84,7 @@
     .font-base {
         font-size: 1.25rem;
     }
-}
-
-@include desktop-down {
     .hero {
-        margin-left: 5%;
+        margin-left: 0;
     }
-    // .hero-imagen {
-    //     background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.733), transparent), url('../images/bg.webp'); 
-    //     background-position: center right;
-    //     background-repeat: no-repeat;
-    //     background-size: auto 100%;
-    // }
 }
