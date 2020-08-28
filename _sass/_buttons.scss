@@ -31,12 +31,12 @@
 .btn-main {
     border: none;
     background-size: 150% auto;
-    background-image: linear-gradient(to right, #9b4dca 0%, rgb(78, 69, 197) 51%, rgb(41, 125, 194) 100%);
+    background-image: linear-gradient(to right, map-get($gradient-button, low-color), map-get($gradient-button, medium-color), map-get($gradient-button, high-color));
 }
 
 .btn-main:hover {
     background-size: 200% auto;
-    background-image: linear-gradient(to right, #c334d6 0%, #9b4dca 20%, rgb(78, 69, 197) 50%);
+    background-image: linear-gradient(to right, map-get($gradient-button-hover, low-color), map-get($gradient-button-hover, medium-color), map-get($gradient-button-hover, high-color));
 }
 
 .btn-social {

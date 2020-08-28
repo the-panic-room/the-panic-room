@@ -26,7 +26,7 @@ scripts:
                 <p class="hero-text" itemprop="description">
                     Ofrecemos servicios enfocados en tus necesidades respaldados por nuestra evaluaci&oacute;n de calidad.
                 </p>
-                <a href="#contacto" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                <a href="{{ site.baseurl }}{% link contact.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
                     Contáctanos
                 </a>
             </div>
@@ -42,9 +42,7 @@ scripts:
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Diseño Web</h5>
-                    <p class="card-text">Proponemos diversos modelos ilustrativos enfocados a su negocio. Ofreciendo un producto adaptable desde ordenadores de
-                    escritorios hasta dispositivos móviles, implementando mejoras continúas de acuerdo a la interacción con el cliente y sus
-                    necesidades.</p>
+                    <p class="card-text">Contamos con expertos en diseño gráfico para crear entornos visualmente atractivos y adaptables a cualquier dispositivo, implementando mejoras continuas de acuerdo a las necesidades del usuario</p>
                 </div>
                 <div class="card-footer">
                     <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
@@ -62,7 +60,7 @@ scripts:
                     variedad de dispositivos y sistemas operativos: en versión Web, Smartphones, Tablets, Windows y Linux.</p>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    <a href="{{ site.baseurl }}{% link services/software.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
                         Ver detalle
                     </a>
                 </div>
@@ -73,9 +71,7 @@ scripts:
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Desarrollo de Hardware</h5>
-                    <p class="card-text">Apoyamos sus ideas desarrollando el hardware que respondan las preguntas críticas de su negocio. Elaborando nuevos
-                    productos tecnológicos que satisfacen las necesidades de los usuarios llevando sus ideas a la realidad. Fusionamos
-                    creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
+                    <p class="card-text">Somos pioneros en la construcción minuciosa de hardware para asegurar su portabilidad.  Fusionamos creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
                 </div>
                 <div class="card-footer">
                     <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
@@ -112,20 +108,20 @@ scripts:
             </div>
         </div> -->
         <div class="row pt-4 justify-content-center align-items-center">
-          <div class="col-md-auto p-md-0">
+          <div class="col-md-auto py-sm-3 p-md-0">
             <a class="btn-custom btn-outline btn-small btn btn-tg btn-social link mr-0 mr-sm-2 mt-3 mt-sm-0 btn-control" href="https://t.me/tpanicroom" rel="noreferrer" target="_blank">
               <img class="btn-icon" src="{{'/assets/images/telegram.webp' | prepend: site.baseurl }}" alt="Telegram" />
               Telegram
             </a>
           </div>
-          <div class="col-md-auto p-md-0">
+          <div class="col-md-auto py-sm-3 p-md-0">
             <a class="btn-custom btn-outline btn-small btn btn-ws btn-social link mr-sm-2  mt-3 mt-sm-0 btn-control"
               href="https://api.whatsapp.com/send?phone=584120835034" rel="noreferrer" target="_blank">
               <img class="btn-icon" src="{{'/assets/images/whatsapp.webp' | prepend: site.baseurl }}" alt="Whatsapp" />
               Whatsapp
             </a>
           </div>
-          <div class="col-md-auto p-md-0">
+          <div class="col-md-auto py-sm-3 p-md-0">
             <button class="btn-custom btn-outline btn-small btn btn-yl btn-social link  mt-3 mt-sm-0 btn-control"
               onclick="openMail()">
               <i class="fas fa-envelope" title="Enviar un correo electr&oacute;nico"></i>

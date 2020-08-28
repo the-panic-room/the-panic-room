@@ -8,10 +8,15 @@
 }
 
 .card-title {
-    color: #9b4dca
+    color: white;
 }
 
 .card-footer, .card-header {
 	background-color: transparent;
 	border: none;
+}
+
+.card-text, .media-body {
+	color: $message-color;
+	font-size: 1.25rem;
 }

@@ -17,3 +17,19 @@ $grid-breakpoints: (
 
 /* header */
 $border-line-link: .1rem;
+
+$link-color: #9b4dca;
+
+$gradient-button: (
+	low-color: #9b4dca 0%,
+	medium-color: rgb(78, 69, 197) 51%,
+	high-color: rgb(41, 125, 194) 100%
+);
+
+$gradient-button-hover: (
+	low-color: #c334d6 0%,
+	medium-color: #9b4dca 20%,
+	high-color: rgb(78, 69, 197) 50%
+);
+
+$message-color: #acabab;

@@ -1,5 +1,5 @@
 /* forms */
-label { 
+label {
     color: rgb(153, 153, 153);
     font-weight: 600;
     display: block;
@@ -10,7 +10,59 @@ input, textarea {
     background: none;
     padding: .5rem 1rem;
     border-radius: 5px;
+}
+input, textarea, .entry__label {
     color: white
 }
+
 input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 
+.form-control, .custom-select, .sib-sms-select__number-input, .sib-sms-select__title {
+	background-color: transparent;
+	height: auto;
+	padding: .85rem 1rem;
+}
+
+.form-control, .custom-select, .form-control::placeholder {
+	color: #e3e3e3;
+}
+
+.form-control:focus, .custom-select:focus, .sib-sms-select__number-input {
+	background-color: transparent;
+}
+
+.form-control, .custom-select, .sib-sms-select__number-input {
+	border: solid 2px #999;
+}
+
+.sib-sms-select__title::after {
+	border-top: 5px solid #fbfbfb;
+	right: 10px;
+}
+
+.sib-sms-select__list {
+	color: black;
+}
+
+#sib-container, .sib-form .entry__field {
+	background-color: transparent;
+}
+
+.entry__error {
+	width: 100%;
+	margin-top: .25rem;
+	font-size: 80%;
+	color: #dc3545;
+}
+
+@include mobile-up {
+	.sib-sms-select__title {
+		max-width: 80px;
+	}
+}
+
+@include mobile-only {
+	.sib-sms-select__title > .sib-flag {
+		margin-top: 5px;
+	}
+}

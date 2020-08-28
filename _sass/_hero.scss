@@ -34,8 +34,62 @@
     font-size: 1rem;
 }
 
+@include mobile-small {
+    .hero-text{
+         color: white
+     }
+    .hero-imagen{
+        width: auto;
+        background: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.webp') no-repeat center; 
+        background-size: auto auto;
+    }
+    .hero-imagen.auto-size {
+        height: 300px;
+    }
+    .hero-footer h1, .hero-footer h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@include mobile-only {
+    .hero-wrapper {
+        align-content: start;
+    }
+    .hero {
+        position: initial;
+        padding-left:  3em;
+        padding-right:  1em;
+    }
+    .hero-imagen {
+          width: auto;
+        background-repeat: no-repeat;
+        background-image: url('../images/bg-mobile.webp');
+        background-position: bottom center;
+        /* background-size: 100% auto; */
+        background-size: contain;
+    }
+    .hero-imagen.auto-size {
+        height: 370px;
+    }
+}
+
 @include tablet-down {
     .font-base {
         font-size: 1.25rem;
+    }
+    .hero-imagen.auto-size {
+        height: 630px;
+    }
+}
+
+@include desktop-down {
+    .hero {
+        margin-left: 5%;
+    }
+    .hero-imagen {
+        background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.733), transparent), url('../images/bg.webp'); 
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
     }
 }
