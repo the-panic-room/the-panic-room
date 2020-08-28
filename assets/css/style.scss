@@ -25,11 +25,6 @@ sitemap:
     margin: 5px auto;
 }
 
-/* main section */
-
-
-
-
 /* footer */
 .footer {
     background: rgb(20, 20, 20);
@@ -50,64 +45,7 @@ sitemap:
     text-decoration: none;
     list-style: none;
 }
-.footer a { color: #9b4dca !important; }
-
-@media only screen and (max-width: 1098px){
-    .hero {
-        left: 5%;
-    }
-    .hero-imagen{
-        background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.733), transparent), url('../images/bg.webp'); 
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-    }
-}
-
-@media only screen and (max-width: 750px){
-    .hero-imagen.auto-size {
-        height: 630px;
-    }
-}
-
-@media only screen and (max-width: 574px){
-    .hero-wrapper{
-        align-content: start;
-    }
-
-    .hero {
-        position: initial;
-        padding-left:  3em;
-        padding-right:  1em;
-    }
-    .hero-imagen{
-          width: auto;
-        background-repeat: no-repeat;
-        background-image: url('../images/bg-mobile.webp');
-        background-position: bottom center;
-        /* background-size: 100% auto; */
-        background-size: contain;
-    }
-    .hero-imagen.auto-size {
-        height: 370px;
-    }
-}
- @media only screen and (max-width: 375px){
-     .hero-text{
-         color: white
-     }
-    .hero-imagen{
-        width: auto;
-        background: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.webp') no-repeat center; 
-        background-size: auto auto;
-    }
-    .hero-imagen.auto-size {
-        height: 300px;
-    }
-    .hero-footer h1, .hero-footer h2 {
-        font-size: 1.4rem;
-    }
-}
+.footer a { color: $link-color !important; }
 
 .cookie-consent {
     position: fixed;
