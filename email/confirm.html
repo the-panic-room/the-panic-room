@@ -1,0 +1,33 @@
+---
+layout: default
+title: Revise su correo para finalizar
+keywords:
+    - the panic room
+    - panic room
+    - tpanicroom
+    - developer
+    - desarrolladores
+    - equipo
+    - web
+    - angular
+    - react
+    - vue
+sitemap:
+  exclude: 'yes'
+---
+<div id="main" class="container-fluid m-0 p-0">
+    {% include nav.html %}
+    <div id="contacto" class="container py-5 text-center">
+      <div class="card p-3 font-base">
+        <div class="card-img-top py-3">
+          <img src="{{ '/assets/images/check.svg' | prepend: site.baseurl }}" alt="..." width="150" height="150">
+        </div>
+        <div class="card-body">
+          <h1 class="display-4">{{ page.title }}</h1>
+          <h4 class="mb-5">Revise su correo y presione el enlace para confirmar la subscripción.</h4>
+          <p class="card-text">Una vez confirmada su subscripción nos pondremos en contacto con usted a través de los canales de comunicación proporcionados para agendar una reunión.</p>
+        </div>
+      </div>
+    </div>
+</div>
+{% include footer.html %}
