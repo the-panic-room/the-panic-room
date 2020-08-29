@@ -8,6 +8,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .btn-small {
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -15,6 +16,7 @@
 .btn-outline {
     border-color: white;
 }
+
 .btn-primary {
     background: #9b4dca !important;
     border: none !important
@@ -29,12 +31,12 @@
 .btn-main {
     border: none;
     background-size: 150% auto;
-    background-image: linear-gradient(to right, #9b4dca 0%, rgb(78, 69, 197) 51%, rgb(41, 125, 194) 100%);
+    background-image: linear-gradient(to right, map-get($gradient-button, low-color), map-get($gradient-button, medium-color), map-get($gradient-button, high-color));
 }
 
 .btn-main:hover {
     background-size: 200% auto;
-    background-image: linear-gradient(to right, #c334d6 0%, #9b4dca 20%, rgb(78, 69, 197) 50%);
+    background-image: linear-gradient(to right, map-get($gradient-button-hover, low-color), map-get($gradient-button-hover, medium-color), map-get($gradient-button-hover, high-color));
 }
 
 .btn-social {
@@ -80,4 +82,26 @@
 .social-logo {
     height: 50px;
     width: auto;
+}
+
+.btn-spacin{
+  padding-bottom: 1rem;
+
+}
+
+.btn_full{
+  width: 100%;
+}
+.ico_email{
+  padding-right: 1.5em;
+}
+
+@include tablet-down {
+    .btn-control {
+        display: block;
+        width: 100%;
+    }
+    .btn-custom {
+        font-size: 1rem;
+    }
 }

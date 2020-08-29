@@ -1,0 +1,119 @@
+---
+layout: default
+title: Servicios
+keywords:
+    - the panic room
+    - panic room
+    - tpanicroom
+    - developer
+    - desarrolladores
+    - equipo
+    - web
+    - angular
+    - react
+    - vue
+scripts:
+    - /assets/js/utils.js
+landing:
+    image: hero-cover1
+---
+<div id="main" class="container-fluid m-0 p-0">
+    <div class="container-fluid hero-imagen hero-cover1">
+        {% include nav.html %}
+        <div class="row hero hero-container justify-content-center justify-content-lg-start">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xl-4 text-center text-lg-left">
+                <h1 class="py-2 py-md-4">
+                    Descubre en qué podemos beneficiarte
+                </h1>
+                <p class="hero-text" itemprop="description">
+                     No te quedes con la duda.
+                </p>
+                <a href="{{ site.baseurl }}{% link contact.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido -->
+    <div id="info" class="container my-3 text-center font-base">
+        <h2 class="display-4 mt-5 mb-3">The Panic Room es lo que necesitas</h2>
+        <h4 class="mb-5">Contratanos y te ofrecemos los siguientes servicios</h4>
+        <div class="row justify-content-center">
+            <div class="card py-4 col-12 col-md-5 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="{{ '/assets/images/diseño.svg' | prepend: site.baseurl }}" alt="" width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Diseño Web</h5>
+                    <p class="card-text">Proponemos diversos modelos ilustrativos enfocados a su negocio. Ofreciendo un producto adaptable desde ordenadores de
+                    escritorios hasta dispositivos móviles, implementando mejoras continúas de acuerdo a la interacción con el cliente y sus
+                    necesidades.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
+            </div>
+            <div class="card py-4 col-12 col-md-5 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="{{ '/assets/images/software.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de Software</h5>
+                    <p class="card-text">Desarrollamos aplicaciones multiplataformas con base a las necesidades del cliente, que se integran con una gran
+                    variedad de dispositivos y sistemas operativos: en versión Web, Smartphones, Tablets, Windows y Linux.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ site.baseurl }}{% link services/software.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
+            </div>
+            <div class="card py-4 col-12 col-md-5 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="{{ '/assets/images/hardware.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de Hardware</h5>
+                    <p class="card-text">Apoyamos sus ideas desarrollando el hardware que respondan las preguntas críticas de su negocio. Elaborando nuevos
+                    productos tecnológicos que satisfacen las necesidades de los usuarios llevando sus ideas a la realidad. Fusionamos
+                    creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ site.baseurl }}{% link services/hardware.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
+            </div>
+            <div class="card py-4 col-12 col-md-5 mb-3 mx-0 mx-md-1 mx-lg-3">
+                <div class="card-img-top py-3">
+                    <img src="{{ '/assets/images/idea.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Marketing digital</h5>
+                    <p class="card-text">Apoyamos sus ideas desarrollando el hardware que respondan las preguntas críticas de su negocio. Elaborando nuevos
+                    productos tecnológicos que satisfacen las necesidades de los usuarios llevando sus ideas a la realidad. Fusionamos
+                    creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ site.baseurl }}{% link services/marketing.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                        Ver detalle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-3 text-center">
+        <h2 class="display-4 mt-5 mb-3">Invierte en tu pagina web con nosotros</h2>
+        <p class="lead">Contratanos y te ofrecemos el servicio de diseño web dentro de nuestros paquetes para emprendedores.</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4">
+                <a href="{{ site.baseurl }}{% link contact.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% include footer.html %}

@@ -34,9 +34,13 @@ body.header-fixed {
 	}
 }
 
+body:not(.header-fixed) .navbar {
+	padding-top: 2em;
+}
+
 @include tablet-down {
 	$padding_x: 2rem;
-	.navbar-expand-md .navbar-collapse {
+	.navbar-collapse {
 		position: fixed;
 		background-color: #313131;
 		padding-top: 1rem;

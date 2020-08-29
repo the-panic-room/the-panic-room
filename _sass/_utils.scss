@@ -25,6 +25,9 @@
     position: relative;
     background-size: 100% 100% !important;
 }
+.hero-text{
+  font-size: 1.2em;
+}
 .hero-imagen.cover nav#nav {
     background-image: linear-gradient(to bottom, #1a1a1aed 0%, rgba(0, 0, 0, 0) 100%);
 }
@@ -43,4 +46,9 @@
 }
 nav#nav {
     z-index: 10000;
+}
+
+.icon-horizontal {
+  margin: auto;
+  width: 100%;
 }

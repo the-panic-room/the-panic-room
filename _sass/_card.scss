@@ -1,0 +1,22 @@
+/* cards */
+.card, .media {
+    background: rgb(24, 24, 26);
+}
+
+.card {
+    text-align: center
+}
+
+.card-title {
+    color: white;
+}
+
+.card-footer, .card-header {
+	background-color: transparent;
+	border: none;
+}
+
+.card-text, .media-body {
+	color: $message-color;
+	font-size: 1.25rem;
+}

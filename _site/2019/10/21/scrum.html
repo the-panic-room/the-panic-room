@@ -31,27 +31,17 @@
     <link rel="manifest" href="/assets/manifest.json" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap">
 <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 <script src="https://kit.fontawesome.com/fbd55178fa.js" crossorigin="anonymous"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147132627-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-147132627-1");
-</script>
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    
 </head>
 <body>
     <div id="main" class="container-fluid m-0 p-0">
     
         <div class="container-fluid hero-imagen cover auto-size m-0 p-0" style="background-image: url('/assets/images/the panic room full stack developers.png')">
             <!-- Menu de navegacion -->
-<nav id="nav" class="navbar navbar-expand-md avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
+<nav id="nav" class="navbar navbar-expand-lg avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
     <button class="navbar-toggler text-white mr-3" type="button" data-toggle="collapse" data-target="#menu"
         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="line"></span>
@@ -82,9 +72,13 @@
             </li>
         </ul>
         <ul class="navbar-nav nav-menu">
-          <!--
-
             <li class="nav-item">
+                <a class="nav-link" href="/services.html"
+                    rel="noreferrer">
+                        Servicios
+                </a>
+            </li>
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="https://github.com/the-panic-room" rel="noreferrer">
                     Productos
                 </a>
@@ -97,7 +91,6 @@
         </ul>
     </div>
 </nav>
-
             <div class="row justify-content-end hero-footer py-2 py-sm-5 px-3 m-0">
                 <div class="col-md-6">
                     <h1>Evento: Scrum el juego continua</h1>
@@ -105,9 +98,14 @@
                     <p class="my-0">Lugar Auditorio "Ciudad de Oro" UPTOS "Clodosbaldo Russi&aacute;n"</p>
                     
                     <div class="row justify-content-end">
-                        <div class="col-auto"><i class="fas fa-calendar-alt" title="Fecha del evento"></i>
-                        2019-10-28 hasta
-                        2019-10-29</div>
+                        <div class="col-auto">
+                            
+                                    <span class="badge badge-pill badge-success">Completado</span>
+                            
+                            <i class="fas fa-calendar-alt" title="Fecha del evento"></i>
+                            2019-10-28 hasta
+                            2019-10-29
+                        </div>
                         <div class="col-auto">
                             <i class="fas fa-clock" title="Hora del evento"></i>
                             08:30 am -
@@ -120,7 +118,7 @@
         </div>
     
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb py-3">
             <li class="breadcrumb-item"><a href="/">Inicio</a></li>
             
             <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
@@ -139,7 +137,7 @@
 
         
             <hr>
-            <div class="media my-3">
+            <div class="media my-3 bg-transparent">
     <img src="https://www.gravatar.com/avatar/86a5f43adbde2f2f09648c217ad6cc77" class="rounded-circle" alt="Jhonny Mata" width="64" height="64">
     <div class="ml-3 media-body">
         <h5 class="mt-0">Jhonny Mata</h5>
@@ -150,30 +148,31 @@
     </div>
 </div>
 <div class="footer container-fluid">
-    <div class="d-flex flex-column flex-sm-row justify-content-end align-items-center flex-nowrap">
-        <div class="col-sm-12 col-md-auto col-lg-8">
-            <form action="https://gmail.us4.list-manage.com/subscribe/post?u=a2a6398eda8f0d4d504016a8f&amp;id=98945859b1"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
-                novalidate>
+    <div class=" d-flex flex-column flex-sm-row justify-content-end align-items-center flex-nowrap">
+        <div class="col-12 col-lg-8">
+            <form id="sib-form-subscribe" method="POST" action="https://deb8564c.sibforms.com/serve/MUIEALwTxuJ_yW5zl4UVRhIlKNfRn-7psgqQpUVmvEAcn5d10noGjCX1-Inwt7-YWy48Td8Vl0aiw70689I5yrXfPkxOLxD972yJ4gT8D3zPgaFnC2fvVJvB5TLazrA52-W5N-4iw81RNR1Fqfi3UnA0AWpzN712IjhLkiDgwAx46wbK8-B0hotXf-gyuPOlv5ItmoI7BqvERyc2" target="_blank">
                 <div class="row justify-content-center align-items-center mb-3">
                     <div class="col-auto my-1">
                         <h3 class="text-left ml-3 d-inline">Suscribete</h3>
                     </div>
                     <div class="col-sm-4 my-1">
-                        <input class="w-100" type="email" id="mail" name="EMAIL" placeholder="Ingrese su email" required>
+                        <input class="form-control subscribe" type="email" id="EMAIL" name="EMAIL" placeholder="Ingrese su email" required>
                     </div>
                     <div class="col-sm-4 my-1">
-                        <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="btn-custom btn btn-main btn-block link">
+                        <input type="hidden" name="email_address_check" value="">
+                        <input type="hidden" name="locale" value="es">
+                        <input type="hidden" name="html_type" value="simple">
+                        <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="btn-custom btn btn-main btn-block link g-recaptcha"
+                            data-sitekey="6LcfW8QZAAAAAA18RVrLM66IgsJzo0qB1MZw6vj2" data-callback="onSubscribe" data-action="submit">
                     </div>
                 </div>
-            </form>
         </div>
     </div>
     <div class="d-flex flex-column flex-sm-row px-5 justify-content-center align-items-end text-center flex-sm-wrap flex-md-nowrap">
         <div class="col-12 col-sm-6 col-md-4 mb-0 text-center order-0 mb-sm-4">
             <ul>
-                <li><a href="/term.html">Términos y condiciones</a></li>
-                <li><a href="/privacity.html">Politicas de privacidad</a></li>
+                <li class="item-footer"><a href="/term.html">Términos y condiciones</a></li>
+                <li class="item-footer"><a href="/privacity.html">Politicas de privacidad</a></li>
             </ul>
         </div>
         <div class="col-12 col-sm-12 col-md-5 text-center mb-4 mb-sm-0 mb-md-4 order-2 order-md-1">
@@ -181,15 +180,30 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 text-center order-1 order-md-2 mb-4">
             <ul>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/developers.html">Desarrolladores</a></li>
+                <li class="item-footer"><a href="/blog.html">Blog</a></li>
+                <li class="item-footer"><a href="/developers.html">Desarrolladores</a></li>
             </ul>
-            
+
             <!-- <a class="mb-2 d-block" href="#">Sobre nosotros</a> -->
-            
+
         </div>
     </div>
 </div>
+    <div class="cookie-consent collapse" id="cookie-consent">
+    	<button class="close" type="button" data-toggle="collapse"
+            data-target="#cookie-consent" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="clearfix py-1"></div>
+        <div class="row justify-content-between align-items-center px-2 pb-1 w-100">
+        	<div class="col-md-9 message">
+        		Su experiencia en este sitio será mejorada con el uso de cookies.
+        	</div>
+        	<div class="col-md-3">
+        		<button class="btn-custom btn btn-main btn-block link" id="accept">Aceptar</button>
+        	</div>
+        </div>
+    </div>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -228,6 +242,9 @@
         navigator.serviceWorker.register("/assets/js/sw.js").then(function () {
             console.log("Service Worker Registered");
         });
+    }
+    function onSubscribe() {
+      document.getElementById("sib-form-subscribe").submit();
     }
     $(document).ready(function () {
         $('.hero-imagen.cover nav#nav #menu').on('hidden.bs.collapse', function () {

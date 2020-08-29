@@ -1,28 +1,29 @@
 <div class="footer container-fluid">
-    <div class="d-flex flex-column flex-sm-row justify-content-end align-items-center flex-nowrap">
-        <div class="col-sm-12 col-md-auto col-lg-8">
-            <form action="https://gmail.us4.list-manage.com/subscribe/post?u=a2a6398eda8f0d4d504016a8f&amp;id=98945859b1"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
-                novalidate>
+    <div class=" d-flex flex-column flex-sm-row justify-content-end align-items-center flex-nowrap">
+        <div class="col-12 col-lg-8">
+            <form id="sib-form-subscribe" method="POST" action="https://deb8564c.sibforms.com/serve/MUIEALwTxuJ_yW5zl4UVRhIlKNfRn-7psgqQpUVmvEAcn5d10noGjCX1-Inwt7-YWy48Td8Vl0aiw70689I5yrXfPkxOLxD972yJ4gT8D3zPgaFnC2fvVJvB5TLazrA52-W5N-4iw81RNR1Fqfi3UnA0AWpzN712IjhLkiDgwAx46wbK8-B0hotXf-gyuPOlv5ItmoI7BqvERyc2" target="_blank">
                 <div class="row justify-content-center align-items-center mb-3">
                     <div class="col-auto my-1">
                         <h3 class="text-left ml-3 d-inline">Suscribete</h3>
                     </div>
                     <div class="col-sm-4 my-1">
-                        <input class="w-100" type="email" id="mail" name="EMAIL" placeholder="Ingrese su email" required>
+                        <input class="form-control subscribe" type="email" id="EMAIL" name="EMAIL" placeholder="Ingrese su email" required>
                     </div>
                     <div class="col-sm-4 my-1">
-                        <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="btn-custom btn btn-main btn-block link">
+                        <input type="hidden" name="email_address_check" value="">
+                        <input type="hidden" name="locale" value="es">
+                        <input type="hidden" name="html_type" value="simple">
+                        <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="btn-custom btn btn-main btn-block link g-recaptcha"
+                            data-sitekey="{{ site.google_recaptcha }}" data-callback="onSubscribe" data-action="submit">
                     </div>
                 </div>
-            </form>
         </div>
     </div>
     <div class="d-flex flex-column flex-sm-row px-5 justify-content-center align-items-end text-center flex-sm-wrap flex-md-nowrap">
         <div class="col-12 col-sm-6 col-md-4 mb-0 text-center order-0 mb-sm-4">
             <ul>
-                <li><a href="{{ site.baseurl }}{% link term.md %}">Términos y condiciones</a></li>
-                <li><a href="{{ site.baseurl }}{% link privacity.md %}">Politicas de privacidad</a></li>
+                <li class="item-footer"><a href="{{ site.baseurl }}{% link term.md %}">Términos y condiciones</a></li>
+                <li class="item-footer"><a href="{{ site.baseurl }}{% link privacity.md %}">Politicas de privacidad</a></li>
             </ul>
         </div>
         <div class="col-12 col-sm-12 col-md-5 text-center mb-4 mb-sm-0 mb-md-4 order-2 order-md-1">
@@ -30,12 +31,12 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 text-center order-1 order-md-2 mb-4">
             <ul>
-                <li><a href="{{ site.baseurl }}{% link blog.html %}">Blog</a></li>
-                <li><a href="{{ site.baseurl }}{% link developers.html %}">Desarrolladores</a></li>
+                <li class="item-footer"><a href="{{ site.baseurl }}{% link blog.html %}">Blog</a></li>
+                <li class="item-footer"><a href="{{ site.baseurl }}{% link developers.html %}">Desarrolladores</a></li>
             </ul>
-            
+
             <!-- <a class="mb-2 d-block" href="#">Sobre nosotros</a> -->
-            
+
         </div>
     </div>
 </div>

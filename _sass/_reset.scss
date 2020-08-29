@@ -16,18 +16,12 @@ body {
 	html, body {
     	font-size: map-get($text-size, mobile);
 	}
-  .footer{
-    padding: 26px 0px
-  }
-  .footer li {
-      font-size: 1.2em;
+  .item-footer {
       margin-bottom: 1rem;
+      font-size: 1.1em;
+  }
+  .footer{
+    padding: 32px 0px;
   }
 }
 
-@include mobile-small {
-  .socials{
-    display: flex;
-    flex-direction: column;
-  }
-}

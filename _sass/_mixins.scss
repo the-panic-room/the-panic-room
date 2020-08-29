@@ -6,15 +6,15 @@
 	        #{$property}: $value;
 }
 
-@mixin mobile-only() {
-	$breakpoint: map-get($grid-breakpoints, md) - .02;
+@mixin mobile-small() {
+	$breakpoint: map-get($grid-breakpoints, sm) - .02;
 	@media (max-width: $breakpoint) {
       @content;
     }
 }
 
-@mixin mobile-small() {
-	$breakpoint: map-get($grid-breakpoints, sm) - .02;
+@mixin mobile-only() {
+	$breakpoint: map-get($grid-breakpoints, md) - .02;
 	@media (max-width: $breakpoint) {
       @content;
     }

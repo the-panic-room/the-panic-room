@@ -26,7 +26,39 @@
     <url>
       <loc>http://localhost:4000/blog.html</loc>
       
-        <lastmod>2020-08-23T13:53:55-04:00</lastmod>
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/contact.html</loc>
+      
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/services/design.html</loc>
+      
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -41,7 +73,22 @@
     <url>
       <loc>http://localhost:4000/developers.html</loc>
       
-        <lastmod>2020-08-23T13:53:55-04:00</lastmod>
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/services/hardware.html</loc>
+      
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -56,7 +103,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2020-08-23T13:53:55-04:00</lastmod>
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -71,9 +118,56 @@
   
     
     <url>
+      <loc>http://localhost:4000/services/marketing.html</loc>
+      
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/privacity.html</loc>
       
-        <lastmod>2020-08-23T13:53:55-04:00</lastmod>
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/services.html</loc>
+      
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/services/software.html</loc>
+      
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -94,7 +188,7 @@
     <url>
       <loc>http://localhost:4000/term.html</loc>
       
-        <lastmod>2020-08-23T13:53:55-04:00</lastmod>
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -109,7 +203,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2020-08-23T13:53:55-04:00</lastmod>
+        <lastmod>2020-08-29T06:29:58-04:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

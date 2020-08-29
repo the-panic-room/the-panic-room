@@ -10,30 +10,19 @@ sitemap:
 @import "utils";
 @import "header";
 @import "hero";
+@import "card";
 
 
-.logo { max-height: 50px; width: auto }
+.logo { max-height: 50px; width: auto; }
 
-.navbar-toggler {border-color: rgb(255, 255, 255) }
-.navbar-toggler:focus { outline: none }
+.navbar-toggler {border-color: rgb(255, 255, 255); }
+.navbar-toggler:focus { outline: none; }
 .line {
     display: block;
     background: white;
     height: 2px;
     width: 20px;
     margin: 5px auto;
-}
-
-/* main section */
-
-
-/* cards */
-.card {
-    background: rgb(24, 24, 26);
-    text-align: center
-}
-.card-title {
-    color: #9b4dca
 }
 
 /* footer */
@@ -56,61 +45,31 @@ sitemap:
     text-decoration: none;
     list-style: none;
 }
-.footer a { color: #9b4dca !important; }
+.footer a { color: $link-color !important; }
 
-@media only screen and (max-width: 1098px){
-    .hero {
-        left: 5%;
+.cookie-consent {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1c1c1c;
+    .close {
+        color: white;
+        font-size: 2rem;
+        margin-top: -1rem;
+        margin-right: -1rem;
+        @include tablet-down {
+            & {
+                font-size: 3rem;
+            }
+        }
     }
-    .hero-imagen{
-        background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.733), transparent), url('../images/bg.webp'); 
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-    }
-}
-
-@media only screen and (max-width: 750px){
-    .hero-imagen.auto-size {
-        height: 630px;
-    }
-}
-
-@media only screen and (max-width: 574px){
-    .hero-wrapper{
-        align-content: start;
-    }
-
-    .hero {
-        position: initial;
-        padding-left:  3em;
-        padding-right:  1em;
-    }
-    .hero-imagen{
-          width: auto;
-        background-repeat: no-repeat;
-        background-image: url('../images/bg-mobile.webp');
-        background-position: bottom center;
-        /* background-size: 100% auto; */
-        background-size: contain;
-    }
-    .hero-imagen.auto-size {
-        height: 370px;
-    }
-}
- @media only screen and (max-width: 375px){
-     .hero-text{
-         color: white
-     }
-    .hero-imagen{
-        width: auto;
-        background: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.webp') no-repeat center; 
-        background-size: auto auto;
-    }
-    .hero-imagen.auto-size {
-        height: 300px;
-    }
-    .hero-footer h1, .hero-footer h2 {
-        font-size: 1.4rem;
+    .message {
+        text-align: center;
+        font-size: 1rem;
     }
 }
