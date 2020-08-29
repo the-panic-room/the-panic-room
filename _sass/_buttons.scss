@@ -104,4 +104,13 @@
     .btn-custom {
         font-size: 1rem;
     }
+    .social-content{
+      margin-right: 0.5em;
+    }
+}
+
+@include mobile-only {
+  .social-content{
+    margin-right: 0em;
+  }
 }
