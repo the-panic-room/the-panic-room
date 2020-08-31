@@ -20,3 +20,12 @@
 	color: $message-color;
 	font-size: 1.25rem;
 }
+
+.card-cover {
+	width: 100%;
+	height: 300px;
+}
+
+.cover {
+	background-size: cover !important;
+}

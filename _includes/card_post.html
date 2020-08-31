@@ -1,6 +1,6 @@
 <div class="card pb-4">
-    <div class="p-0 m-0 card-cover">
-        <img src="{{ include.post.cover | prepend: site.baseurl }}" alt="{{ include.post.title }}">
+	<div class="card-img-top py-3">
+        <img src="{{ include.post.cover | prepend: site.baseurl }}" alt="{{ include.post.title }}" class="card-cover">
     </div>
     <div class="card-body">
         <h5 class="card-title">{{ include.post.title }}</h5>
