@@ -31,26 +31,16 @@
     <link rel="manifest" href="/assets/manifest.json" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap">
 <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 <script src="https://kit.fontawesome.com/fbd55178fa.js" crossorigin="anonymous"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147132627-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-147132627-1");
-</script>
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    
 </head>
 <body>
     <div id="main" class="container-fluid m-0 p-0">
     <div class="container-fluid hero-imagen hero-cover1">
         <!-- Menu de navegacion -->
-<nav id="nav" class="navbar navbar-expand-md avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
+<nav id="nav" class="navbar navbar-expand-lg avbar-dark px-4" itemscope itemtype="http://schema.org/Organization">
     <button class="navbar-toggler text-white mr-3" type="button" data-toggle="collapse" data-target="#menu"
         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="line"></span>
@@ -58,7 +48,7 @@
         <span class="line"></span>
     </button>
     <a class="navbar-brand mr-auto" href="/">
-        <img src="/assets/images/tpr.webp" class="logo" alt="The panic room" itemprop="logo" />
+        <img src="/assets/images/tpr.webp" data-webp="/assets/images/tpr.png" class="logo" alt="The panic room" itemprop="logo" />
     </a>
     <div class="collapse navbar-collapse" id="menu">
         <div class="nav-bg-menu" data-toggle="collapse" data-target="#menu"></div>
@@ -100,85 +90,45 @@
         </ul>
     </div>
 </nav>
-        <div class="row hero hero-container">
-            <div class="col-12 col-sm-6 col-lg-3">
+        <div class="row hero hero-container justify-content-center justify-content-lg-start">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xl-4 text-center text-lg-left">
                 <h1 class="py-2 py-md-4">
-                    Ofrecemos una mejor experiencia de usuario.
+                    ¿Estás emprendiendo y no tienes un sitio web?
                 </h1>
                 <p class="hero-text" itemprop="description">
-                    Pensado siempre en la usabilidad, nuestros diseños estan enfocados en el usuario final.
+                    En The Panic Room contamos con diseñadores expertos para ponerlos a tu disposición.
                 </p>
-                <a href="#contacto" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                <a href="/contact.html" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
                     Contáctanos
                 </a>
             </div>
         </div>
     </div>
     <!-- Contenido -->
-    <div id="info" class="container my-3 text-center">
-    	<h2 class="display-4 mt-5 mb-3">Navegar por la web nunca ha sido tan facil</h2>
-    	<h4 class="mb-5">Un buen diseño de tu sitio web te garantiza una mayor competitividad</h4>
-    	<div class="row justify-content-center">
-    		<div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
-    			<div class="py-3">
-                    <img src="/assets/images/responsive.svg" alt="..." width="250" height="125">
-                </div>
-    			<div class="card-body">
-                    <h5 class="card-title">Responsividad</h5>
-                    <p class="card-text">Nuestros diseños estan pensado para adaptarse a todas las resoluciones de pantalla estandar.</p>
-                </div>
-    		</div>
-    		<div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
-    			<div class="py-3">
-                    <img src="/assets/images/fonts.svg" alt="..." width="180" height="125">
-                </div>
-    			<div class="card-body">
-                    <h5 class="card-title">Tipografía</h5>
-                    <p class="card-text">Una fuente puede describir mucho de tu web para ello seleccionamos las mejores fuentes que se adapten a su modelo de negocio.</p>
-                </div>
-    		</div>
-    		<div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
-    			<div class="py-3">
-                    <img src="/assets/images/rocket.svg" alt="..." width="180" height="125">
-                </div>
-    			<div class="card-body">
-                    <h5 class="card-title">Velocidad de carga</h5>
-                    <p class="card-text">Todos nuestros diseños estan pensados en el menor uso de recursos informáticos sin afectar los aspectos visuales</p>
-                </div>
-    		</div>
-    	</div>
-    	<p class="text-white lead mt-3">Analizamos las necesidades de los clientes como objetivos para configurar tu sitio web para ofrecer la mejor experiencia de usuario.</p>
-    </div>
     <div class="container my-3 text-center">
-    	<h2 class="display-4 mt-5 mb-3">Nuestros servicios incluidos</h2>
-    	<h4 class="mb-5">Lorem ipsu dolor amen</h4>
-    	<p class="lead">Lorem ipsu dolor ammen dolor ipsu lorem ammen.</p>
-    	<div class="media p-5 my-4 text-justify">
-		  <img src="/assets/images/software.svg" class="mr-4" alt="...">
-		  <div class="media-body">
-		    <h5 class="card-title mt-0">Analisis de usuario</h5>
-		    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    	<h2 class="display-4 mt-5 mb-3">¿Qué servicios ofrecemos?</h2>
+    	<div class="media p-5 my-4 text-justify align-items-center">
+		  <img src="/assets/images/wireframe.svg" class="mr-4" alt="..." width="120" height="120">
+		  <div class="media-body text-white font-long">
+		    Con nuestro conocimiento y pasión por el diseño, te brindamos interfaces optimizadas acorde a los nuevos tiempos con una apariencia atrayente, que resalte por encima de la competencia.
 		  </div>
 		</div>
-		<div class="media p-5 my-4 text-justify">
-		  <img src="/assets/images/software.svg" class="mr-4" alt="...">
-		  <div class="media-body">
-		    <h5 class="card-title mt-0">Wireframing</h5>
-		    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		<div class="media p-5 my-4 text-justify align-items-center">
+		  <img src="/assets/images/fonts.svg" class="mr-4" alt="..." width="120" height="120">
+		  <div class="media-body text-white font-long">
+		    Elaboramos diversos prototipos que representen a tu negocio con diseños personalizados para hacer de su pagina web un sitio único.
 		  </div>
 		</div>
-		<div class="media p-5 my-4 text-justify">
-		  <img src="/assets/images/software.svg" class="mr-4" alt="...">
-		  <div class="media-body">
-		    <h5 class="card-title mt-0">Prototipado</h5>
-		    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		<div class="media p-5 my-4 text-justify align-items-center">
+		  <img src="/assets/images/touch.svg" class="mr-4" alt="..." width="120" height="120">
+		  <div class="media-body text-white font-long">
+		    Aseguramos una experiencia de usuario optimizada garantizando una velocidad de carga mínima y un alto rendimiento con diseños únicos y elegantes.
 		  </div>
 		</div>
-		<div class="media p-5 my-4 text-justify">
-		  <img src="/assets/images/software.svg" class="mr-4" alt="...">
-		  <div class="media-body">
-		    <h5 class="card-title mt-0">Maquetación</h5>
-		    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		<div class="media p-5 my-4 text-justify align-items-center">
+		  <img src="/assets/images/mark.svg" class="mr-4" alt="..." width="120" height="120">
+		  <div class="media-body text-white font-long">
+		    Realizamos mejoras continuas, para asegurarnos de que su pagina web esté actualizada con lo ultimo en tendencia moderna.
 		  </div>
 		</div>
     </div>
@@ -188,7 +138,7 @@
     	<p class="lead">Contratanos y te ofrecemos el servicio de diseño web dentro de nuestros paquetes para emprendedores.</p>
     	<div class="row justify-content-center align-items-center">
     		<div class="col-md-4">
-    			<a href="#contacto" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+    			<a href="/contact.html" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
                     Contáctanos
                 </a>
     		</div>
@@ -197,22 +147,23 @@
 </div>
 <div class="footer container-fluid">
     <div class=" d-flex flex-column flex-sm-row justify-content-end align-items-center flex-nowrap">
-        <div class="col-sm-12 col-md-auto col-lg-8">
-            <form  action="https://gmail.us4.list-manage.com/subscribe/post?u=a2a6398eda8f0d4d504016a8f&amp;id=98945859b1"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
-                novalidate>
+        <div class="col-12 col-lg-8">
+            <form id="sib-form-subscribe" method="POST" action="https://deb8564c.sibforms.com/serve/MUIEALwTxuJ_yW5zl4UVRhIlKNfRn-7psgqQpUVmvEAcn5d10noGjCX1-Inwt7-YWy48Td8Vl0aiw70689I5yrXfPkxOLxD972yJ4gT8D3zPgaFnC2fvVJvB5TLazrA52-W5N-4iw81RNR1Fqfi3UnA0AWpzN712IjhLkiDgwAx46wbK8-B0hotXf-gyuPOlv5ItmoI7BqvERyc2" target="_blank">
                 <div class="row justify-content-center align-items-center mb-3">
                     <div class="col-auto my-1">
                         <h3 class="text-left ml-3 d-inline">Suscribete</h3>
                     </div>
                     <div class="col-sm-4 my-1">
-                        <input class="w-100" type="email" id="mail" name="EMAIL" placeholder="Ingrese su email" required>
+                        <input class="form-control subscribe" type="email" id="EMAIL" name="EMAIL" placeholder="Ingrese su email" required>
                     </div>
                     <div class="col-sm-4 my-1">
-                        <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="btn-custom btn btn-main btn-block link">
+                        <input type="hidden" name="email_address_check" value="">
+                        <input type="hidden" name="locale" value="es">
+                        <input type="hidden" name="html_type" value="simple">
+                        <input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="btn-custom btn btn-main btn-block link g-recaptcha"
+                            data-sitekey="6LcfW8QZAAAAAA18RVrLM66IgsJzo0qB1MZw6vj2" data-callback="onSubscribe" data-action="submit">
                     </div>
                 </div>
-            </form>
         </div>
     </div>
     <div class="d-flex flex-column flex-sm-row px-5 justify-content-center align-items-end text-center flex-sm-wrap flex-md-nowrap">
@@ -292,6 +243,9 @@
         navigator.serviceWorker.register("/assets/js/sw.js").then(function () {
             console.log("Service Worker Registered");
         });
+    }
+    function onSubscribe() {
+      document.getElementById("sib-form-subscribe").submit();
     }
     $(document).ready(function () {
         $('.hero-imagen.cover nav#nav #menu').on('hidden.bs.collapse', function () {
