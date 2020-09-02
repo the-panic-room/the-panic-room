@@ -62,6 +62,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-minifier
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -71,6 +72,10 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+
+jekyll-minifier:
+  compress_javascript: true
+  compress_json: true
 
 # Exclude these files from your production _site
 exclude:

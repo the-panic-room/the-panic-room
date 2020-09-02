@@ -2,6 +2,7 @@
 
 ### Added
 
+- Polyfill para detectar soporte de imagenes webp
 - pagina de confirmación de la subscripción a los anuncios.
 - pagina de confirmación de la subscripción para contactar.
 - eventos posteados del blog pueden marcarse como completados.
