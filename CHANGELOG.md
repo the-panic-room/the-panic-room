@@ -2,6 +2,7 @@
 
 ### Added
 
+- Compresión de archivos javascript en producción.
 - Polyfill para detectar soporte de imagenes webp
 - pagina de confirmación de la subscripción a los anuncios.
 - pagina de confirmación de la subscripción para contactar.
@@ -17,7 +18,7 @@
 ### Changed
 
 - color de los iconos.
-
+- actualizando cargos del equipo.
 
 ### Fixed
 
