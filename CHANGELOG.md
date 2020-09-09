@@ -2,6 +2,7 @@
 
 ### Added
 
+- soporte a services workers y cache app.
 - Compresión de archivos javascript en producción.
 - Polyfill para detectar soporte de imagenes webp
 - pagina de confirmación de la subscripción a los anuncios.
@@ -22,6 +23,7 @@
 
 ### Fixed
 
+- corregido scope manifest pwa.
 - contraste en los enlaces del footer afecta la lectura.
 - etiquetas label del form subscripcion.
 - url rota del icono pwa.

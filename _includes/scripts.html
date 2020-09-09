@@ -35,9 +35,10 @@
 {% endfor %}
 <script>
     if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("{{'/assets/js/sw.js' | prepend: site.baseurl }}").then(function () {
-            console.log("Service Worker Registered");
-        });
+        navigator.serviceWorker.register("{{'/sw.js' | prepend: site.baseurl }}", { scope: '/' })
+          .then(function (registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          });
     }
     function onSubscribe() {
       document.getElementById("sib-form-subscribe").submit();
