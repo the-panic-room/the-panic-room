@@ -1,20 +1,56 @@
 ---
 layout: default
 title: Equipo
+scripts:
+    - /assets/js/utils.js
 ---
-<div id="main" class="container-fluid">
-    {% include nav.html %}
-    <div class="container my-3">
-        <!-- Contenido -->
-        <h1 class="mb-3">{{ page.title }}</h1>
-        {{ site.teams }}
-        <div class="row justify-content-center">
-            {% for team in site.teams %}
-                <div class="col-md-4 my-3">
-                    {% include card_people.html person=team %}
-                </div>
-            {% endfor %}
+<div id="main" class="container-fluid m-0 p-0">
+    <div class="container-fluid hero-imagen hero-cover1">
+        {% include nav.html %}
+        <div class="row hero hero-container justify-content-center justify-content-lg-start">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xl-4 text-center text-lg-left">
+                <h1 class="py-2 py-md-4">
+                    Contratanos y haremos crecer tu negocio.
+                </h1>
+                <p class="hero-text" itemprop="description">
+                    Ofrecemos servicios enfocados en tus necesidades respaldados por nuestra evaluaci&oacute;n de calidad.
+                </p>
+                <a href="{{ site.baseurl }}{% link contact.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    Contáctanos
+                </a>
+            </div>
         </div>
     </div>
+    <section class="section-container bg-magenta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center text-lg-right separator border-white mb-4 mb-lg-0"><h2>Lorem ipsum dolor sit amet</h2></div>
+                <div class="col-md-6 font-marked text-center text-lg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, facilis. Accusamus obcaecati quos, minima et</div>
+            </div>
+        </div>
+    </section>
+    <section class="section-container bg-metro">
+        <h2 class="display-3 text-center mb-5">Nuestro equipo</h2>
+        <div class="row justify-content-center">
+            {% for team in site.teams %}
+                <!-- begin:card -->
+                <div class="col-12 col-md-3 mb-3 card py-4 mx-2">
+                    <div class="card-img-top py-3">
+                        <img src="{{ team.cover }}" class="rounded-circle" alt="{{ include.person.name }}" width="128" height="128">
+                    </div>
+                    <div class="card-body ">
+                        <h5 class="card-title">{{ team.name }}</h5>
+                        <p class="card-text text-center">{{ team.position }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ team.linkedin }}" class="btn-link">
+                            Ver detalle
+                        </a>
+                    </div>
+                </div>
+                <!-- end:card -->
+            {% endfor %}
+        </div>
+    </section>
 </div>
 {% include footer.html %}

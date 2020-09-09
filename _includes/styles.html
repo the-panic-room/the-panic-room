@@ -1,8 +1,12 @@
 <link rel="manifest" href="{{'/assets/manifest.json' | prepend: site.baseurl }}" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" async>
 <link rel="stylesheet" type="text/css" href="{{'/assets/css/bootstrap.min.css' | prepend: site.baseurl }}" />
-<script src="https://kit.fontawesome.com/fbd55178fa.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/fbd55178fa.js" crossorigin="anonymous" async></script>
+{% for style in layout.styles %}
+    <link rel="stylesheet" type="text/css" href="{{ style | prepend: site.baseurl }}" />
+{% endfor %}
 {% for style in page.styles %}
     <link rel="stylesheet" type="text/css" href="{{ style | prepend: site.baseurl }}" />
 {% endfor %}
 <link rel="stylesheet" type="text/css" href="{{'/assets/css/style.css' | prepend: site.baseurl }}" />
+<link rel="stylesheet" type="text/css" href="{{'/assets/css/icons.css' | prepend: site.baseurl }}" />

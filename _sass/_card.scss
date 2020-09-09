@@ -1,29 +1,40 @@
 /* cards */
-.card, .media {
-    background: rgb(24, 24, 26);
-}
+// .card, .media {
+//     background: rgb(24, 24, 26);
+// }
 
 .card {
-    text-align: center
+    text-align: center;
+   	border: none;
+    .card-text {
+    	@extend .font-marked;
+    	text-align: justify;
+    }
+	.card-footer, .card-header {
+		background-color: transparent;
+		border: none;
+	}
+	.card-title {
+		font-weight: bold;
+	}
 }
 
-.card-title {
-    color: white;
+.media {
+	background-color: white;
 }
+// .card-title {
+//     color: white;
+// }
 
-.card-footer, .card-header {
-	background-color: transparent;
-	border: none;
-}
 
-.card-text, .media-body {
-	color: $message-color;
-	font-size: 1.25rem;
-}
+// .card-text, .media-body {
+// 	color: $message-color;
+// 	font-size: 1.25rem;
+// }
 
 .card-cover {
 	width: 100%;
-	height: 300px;
+	height: 150px;
 }
 
 .cover {

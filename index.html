@@ -32,119 +32,103 @@ scripts:
             </div>
         </div>
     </div>
-    <!-- Contenido -->
-    <div id="info" class="container-fluid my-3 font-base">
-        <h2 class="display-4 mt-5 mb-3 text-center">Nuestros servicios</h2>
-        <div id="info" class="d-flex flex-column flex-md-row justify-content-center  align-items-md-stretch px-1 px-sm-3  px-md-0 py-3 flex-nowrap border-bottom border-secondary">
-            <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
+    <section class="section-container bg-magenta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center text-lg-right separator border-white mb-4 mb-lg-0"><h2>Lorem ipsum dolor sit amet</h2></div>
+                <div class="col-md-6 font-marked text-center text-lg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, facilis. Accusamus obcaecati quos, minima et</div>
+            </div>
+        </div>
+    </section>
+    <section class="section-container bg-metro">
+        <h2 class="display-3 text-center mb-5">Lorem ipsum dolor sit amet consectetur</h2>
+        <div class="row justify-content-center">
+            <!-- begin:card -->
+            <div class="col-12 col-md-3 mb-3 card py-4 mx-2">
                 <div class="card-img-top py-3">
-                    <img src="{{ '/assets/images/diseño.svg' | prepend: site.baseurl }}" alt="" width="115" height="115">
+                    <span class="tpr-icon tpr-icon-lg tpr-design"></span>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Diseño Web</h5>
-                    <p class="card-text">Contamos con expertos en diseño gráfico para crear entornos visualmente atractivos y adaptables a cualquier dispositivo, implementando mejoras continuas de acuerdo a las necesidades del usuario</p>
+                    <span class="h3 card-title mb-3">Lorem ipsum dolor sit</span>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda, vitae itaque, nobis aliquid minus excepturi doloribus quisquam, natus deserunt magni corrupti nesciunt omnis pariatur. Porro nisi repellendus deleniti possimus?</p>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ site.baseurl }}{% link services/design.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    <a href="#" class="btn-link">
                         Ver detalle
                     </a>
                 </div>
             </div>
-            <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
+            <!-- end:card -->
+            <!-- begin:card -->
+            <div class="col-12 col-md-3 mb-3 card py-4 mx-2">
                 <div class="card-img-top py-3">
-                    <img src="{{ '/assets/images/software.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
+                    <span class="tpr-icon tpr-icon-lg tpr-software"></span>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Desarrollo de Software</h5>
-                    <p class="card-text">Desarrollamos aplicaciones multiplataformas con base a las necesidades del cliente, que se integran con una gran
-                    variedad de dispositivos y sistemas operativos: en versión Web, Smartphones, Tablets, Windows y Linux.</p>
+                    <span class="h3 card-title mb-3">Lorem ipsum dolor sit</span>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda, vitae itaque, nobis aliquid minus excepturi doloribus quisquam, natus deserunt magni corrupti nesciunt omnis pariatur. Porro nisi repellendus deleniti possimus?</p>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ site.baseurl }}{% link services/software.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    <a href="#" class="btn-link">
                         Ver detalle
                     </a>
                 </div>
             </div>
-            <div class="card py-4 col-12 col-md-3 mb-3 mx-0 mx-md-1 mx-lg-3">
+            <!-- end:card -->
+            <!-- begin:card -->
+            <div class="col-12 col-md-3 mb-3 card py-4 mx-2">
                 <div class="card-img-top py-3">
-                    <img src="{{ '/assets/images/hardware.svg' | prepend: site.baseurl }}" alt="..." width="115" height="115">
+                    <span class="tpr-icon tpr-icon-lg tpr-cpu"></span>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Desarrollo de Hardware</h5>
-                    <p class="card-text">Somos pioneros en la construcción minuciosa de hardware para asegurar su portabilidad.  Fusionamos creatividad, tecnología e innovación para crear el soporte físico que el público desea y su empresa necesita.</p>
+                    <span class="h3 card-title mb-3">Lorem ipsum dolor sit</span>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda, vitae itaque, nobis aliquid minus excepturi doloribus quisquam, natus deserunt magni corrupti nesciunt omnis pariatur. Porro nisi repellendus deleniti possimus?</p>
                 </div>
                 <div class="card-footer">
-                    <a href="{{ site.baseurl }}{% link services/hardware.html %}" class="btn-custom btn btn-main link my-2 my-md-4 btn-block">
+                    <a href="#" class="btn-link">
                         Ver detalle
                     </a>
                 </div>
             </div>
+            <!-- end:card -->
         </div>
-    </div>
-    <div id="contacto" class="container py-5">
-        <!-- <div id='contactForm"' class="row">
-            <div class="col">
-                <form action="">
-                    <div class="container">
-                        <h1>Get in!</h1>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 pt-3">
-                                <label for="mail">Tu correo</label>
-                                <input class="w-100" type="email" id="mail">
-                            </div>
-                            <div class="col-xs-12 col-sm-6 pt-3">
-                                <label for="nombre">Nombre</label>
-                                <input class="w-100" type="text" id="nombre">
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col">
-                                <label for="contenido">Contenido</label>
-                                <textarea class="w-100" name="contenido" id="contenido" rows="5"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+    </section>
+    <section class="section-container bg-black">
+        <h2 class="display-4 text-center mb-5">Lorem ipsum dolor sit amet consectetur</h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <span class="tpr-icon tpr-icon-xl tpr-cpu fill-white mb-3 mb-lg-0"></span>
             </div>
-        </div> -->
-        <div class="row pt-4 justify-content-center align-items-center">
-          <div class="col-md-auto py-sm-3 p-md-0">
-            <a class="btn-custom btn-outline btn-small btn btn-tg btn-social link mr-0 mr-sm-2 mt-3 mt-sm-0 btn-control" href="https://t.me/tpanicroom" rel="noreferrer" target="_blank">
-              <img class="btn-icon" src="{{'/assets/images/telegram.webp' | prepend: site.baseurl }}" data-webp="{{'/assets/images/telegram.png' | prepend: site.baseurl }}" alt="Telegram" />
-              Telegram
-            </a>
-          </div>
-          <div class="col-md-auto py-sm-3 p-md-0">
-            <a class="btn-custom btn-outline btn-small btn btn-ws btn-social link mr-sm-2  mt-3 mt-sm-0 btn-control"
-              href="https://api.whatsapp.com/send?phone=584120835034" rel="noreferrer" target="_blank">
-              <img class="btn-icon" src="{{'/assets/images/whatsapp.webp' | prepend: site.baseurl }}" data-webp="{{'/assets/images/whatsapp.png' | prepend: site.baseurl }}" alt="Whatsapp" />
-              Whatsapp
-            </a>
-          </div>
-          <div class="col-md-auto py-sm-3 p-md-0">
-            <button class="btn-custom btn-outline btn-small btn btn-yl btn-social link  mt-3 mt-sm-0 btn-control"
-              onclick="openMail()">
-              <i class="fas fa-envelope" title="Enviar un correo electr&oacute;nico"></i>
-              Correo
-            </button>
-          </div>
-        </div>
-        <div class="row pt-4">
-            <div class="col text-center">
-                <a href="https://www.linkedin.com/company/thepanicroom" rel="noreferrer" class="pr-2 align-bottom btn-touch"
-                    target="_blank">
-                    <img src="{{'/assets/images/linkedin.svg' | prepend: site.baseurl }}" alt="Linkedin" class="social-logo"/>
-                </a>
-                <a href="https://github.com/the-panic-room" rel="noreferrer" class="pr-2 align-bottom btn-touch"
-                    target="_blank">
-                    <img src="{{'/assets/images/github.svg' | prepend: site.baseurl }}" alt="Github" class="social-logo" />
-                </a>
-                <a href="https://www.facebook.com/tpanicroom/" rel="noreferrer" class="align-bottom btn-touch"
-                    target="_blank">
-                    <img src="{{'/assets/images/facebook.svg' | prepend: site.baseurl }}" alt="Facebook" class="social-logo" />
-                </a>
+            <div class="col-md-6 text-center text-lg-left">
+                <p class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis error atque iure facilis odit, dolorem nulla a accusantium totam nesciunt veritatis blanditiis cumque amet sapiente animi quas eveniet voluptatem.</p>
+                <p class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis error atque iure facilis odit, dolorem nulla a accusantium totam nesciunt veritatis blanditiis cumque amet sapiente animi quas eveniet voluptatem.</p>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="section-container bg-purple">
+        <h2 class="display-4 text-center mb-5">Lorem ipsum dolor sit amet consectetur</h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <span class="tpr-icon tpr-icon-xl tpr-idea fill-white mb-3 mb-lg-0"></span>
+            </div>
+            <div class="col-md-6 text-center text-lg-left">
+                <p class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis error atque iure facilis odit, dolorem nulla a accusantium totam nesciunt veritatis blanditiis cumque amet sapiente animi quas eveniet voluptatem.</p>
+                <p class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis error atque iure facilis odit, dolorem nulla a accusantium totam nesciunt veritatis blanditiis cumque amet sapiente animi quas eveniet voluptatem.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-container bg-lila">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="blockquote text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis error atque iure facilis odit, dolorem nulla a accusantium totam nesciunt veritatis blanditiis cumque amet sapiente animi quas eveniet voluptatem.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-4">
+                    <a href="{{ site.baseurl }}{% link contact.html %}" class="btn-custom btn-outline btn link my-2 my-md-4 btn-block">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 {% include footer.html %}

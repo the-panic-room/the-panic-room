@@ -3,13 +3,26 @@ sitemap:
   exclude: 'yes'
 ---
 {
-    "short_name":"panicroom.tk",
+    "short_name":"The panic room",
     "name":"The Panic Room - Full stack developers",
     "icons":[
-        {"src":"{{'/assets/img/192.png' | prepend: site.baseurl }}","type":"image/png","sizes":"192x192"},
-        {"src":"{{'/assets/img/splahs.png' | prepend: site.baseurl }}","type":"image/png","sizes":"512x512"}
+        {
+            "src":"{{'/assets/images/icons/app144.png' | prepend: site.baseurl }}",
+            "type":"image/png","sizes":"144x144",
+            "purpose": "maskable"
+        },
+        {
+            "src":"{{'/assets/images/icons/app192.png' | prepend: site.baseurl }}",
+            "type":"image/png","sizes":"192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src":"{{'/assets/images/icons/app512.png' | prepend: site.baseurl }}",
+            "type":"image/png","sizes":"512x512",
+            "purpose": "maskable"
+        }
     ],
-    "start_url":"/index.html",
+    "start_url":"/",
     "background_color":"rgb(255,255,255)",
     "theme_color":"rgb(0,0,0)",
     "display":"fullscreen",

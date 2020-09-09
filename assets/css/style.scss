@@ -3,11 +3,13 @@ sitemap:
   exclude: 'yes'
 ---
 @import "config";
+@import "colors";
 @import "mixins";
 @import "reset";
-@import "buttons";
-@import "forms";
 @import "utils";
+@import "buttons";
+@import "nav";
+@import "forms";
 @import "header";
 @import "hero";
 @import "card";
@@ -30,6 +32,14 @@ sitemap:
     background: rgb(20, 20, 20);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    color: white;
+    & .form-control, & .custom-select, & .sib-sms-select__number-input, & .sib-sms-select__title {
+        border: 1px solid #ffffff !important;
+        color: white;
+        &:placeholder {
+            color: white;
+        }
+    }
 }
 .footer ul {
     overflow: hidden;

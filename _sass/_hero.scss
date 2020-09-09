@@ -1,4 +1,4 @@
-.hero-wrapper{
+.hero-wrapper {
     height: 85%;
     display: flex;
     align-content: center
@@ -18,13 +18,11 @@
 	font-size: 1.25rem;
 }
 
-.font-base {
-    font-size: 1rem;
-}
 
 .hero-imagen {
     min-height: 750px;
     width: 100%;
+    color: white;
 }
 
 .hero-cover1 {
@@ -32,6 +30,26 @@
     background-repeat: no-repeat;
     @supports (background-image: url('../images/bg.webp')) {
         background-image: url('../images/bg.webp');
+    }
+}
+
+.section-container {
+    margin: 0 !important;
+    padding: 100px 1rem;
+    position: relative;
+    @extend .font-base;
+    .separator {
+        border-right: 3px solid;
+    }
+    @include tablet-down {
+        .separator {
+            border-right: none;
+            border-bottom: 3px solid;
+        }
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -86,11 +104,9 @@
             background-image: url('../images/bg-mobile.webp');
         }
     }
-
-    .font-base {
-        font-size: 1.25rem;
-    }
     .hero {
         margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

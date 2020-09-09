@@ -28,8 +28,8 @@ body.header-fixed {
 		background-color: #1c1c1c;
 		top: 0;
 		left: 0;
-		& + .hero {
-		    margin-top: 5rem;
+		& + .hero, & + div, & + section {
+		    margin-top: calc(80px + 1.5rem);
 		}
 	}
 }

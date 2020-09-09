@@ -1,0 +1,13 @@
+---
+sitemap:
+  exclude: 'yes'
+---
+@import "config";
+@import "mixins";
+
+
+.tpr-blog {
+	.page .card-body {
+		font-size: 1.5rem;
+	}
+}

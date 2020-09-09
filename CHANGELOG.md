@@ -22,6 +22,11 @@
 
 ### Fixed
 
+- contraste en los enlaces del footer afecta la lectura.
+- etiquetas label del form subscripcion.
+- url rota del icono pwa.
+- icon maskable en pwa.
+- contraste bajo en el input subscribe del footer.
 - desajustes de cajas de servicios del landing en breakpoints xl.
 - desajuste de la imagen de fondo en tablets y telefonos con breakpoints md.
 - Incremento de letras en tarjetas y hero.

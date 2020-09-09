@@ -1,5 +1,5 @@
-$bg-color: #202020;
-$text-color: white;
+$bg-color: #ededed;// #202020;
+$text-color: black;
 $font-family: 'Cabin', 'sans-serif';
 
 $text-size: (
@@ -18,7 +18,7 @@ $grid-breakpoints: (
 /* header */
 $border-line-link: .1rem;
 
-$link-color: #9b4dca;
+$link-color: #e465f9;
 
 $gradient-button: (
 	low-color: #9b4dca 0%,
@@ -32,4 +32,18 @@ $gradient-button-hover: (
 	high-color: rgb(78, 69, 197) 50%
 );
 
-$message-color: #acabab;
+$tpr-colors: (
+	'magenta': #a62d59,
+	'green': #52a1a2,
+	'gray': #606060,
+	'purple': #2f243e,
+	'black': #202020,
+	'blue': #a1b8fe,
+	'orange': #ec614e,
+	'metro': #ededed,
+	'lila': #8B4DFF
+);
+
+$tpr-dark-colors: ('magenta', 'green', 'gray', 'purple', 'black', 'orange', 'lila');
+
+$tpr-icon-color: map-get($tpr-colors, 'magenta');

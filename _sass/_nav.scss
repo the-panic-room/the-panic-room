@@ -1,0 +1,45 @@
+.nav-blog {
+	.nav-title {
+		font-weight: bold;
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+	.nav-container {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	ul {
+		padding: 0;
+		& li  {
+			list-style: none;
+			& .nav-link {
+				position: relative;
+				border-bottom: 1px solid #e3e3e3;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				&:after {
+					$size: 24px;
+					content: "";
+					position: absolute;
+					top: calc(50% - #{$size / 2});
+					width: $size;
+					height: $size;
+					border-radius: 0.5rem;
+					right: 0;
+					background-color: #e8e8e8;
+					border: 1px solid #c6c6c6;
+				}
+				&.active:after {
+				    background-color: #bbb;
+    				border-color: #8e8e8e;
+				}
+			}
+		}
+	}
+}
+@include desktop-up {
+	.panel-filter .nav-collapse {
+		display: block;
+	}
+}

@@ -11,9 +11,9 @@ input, textarea {
     padding: .5rem 1rem;
     border-radius: 5px;
 }
-input, textarea, .entry__label {
-    color: white
-}
+// input, textarea, .entry__label {
+//     color: white
+// }
 
 input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 
@@ -24,15 +24,11 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 }
 
 .form-control, .custom-select, .form-control::placeholder {
-	color: #e3e3e3;
+	color: #63676c;
 }
 
 .form-control:focus, .custom-select:focus, .sib-sms-select__number-input {
 	background-color: transparent;
-}
-
-.form-control, .custom-select, .sib-sms-select__number-input {
-	border: solid 2px #999;
 }
 
 .form-control.subscribe:invalid {
@@ -46,6 +42,10 @@ input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 
 .sib-sms-select__list {
 	color: black;
+}
+
+.form-control, .custom-select, .sib-sms-select__number-input {
+	border: 1px solid #7b8188 !important;
 }
 
 #sib-container, .sib-form .entry__field {

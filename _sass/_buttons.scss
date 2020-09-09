@@ -14,8 +14,26 @@
     padding-bottom: .5rem;
 }
 .btn-outline {
-    border-color: white;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.16);
+    }
+    &.link {
+        border-color: white;
+    }
+    &.black {
+        color: black;
+        border-color: black;
+    }
 }
+
+.link {
+    color: white;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 
 .btn-primary {
     background: #9b4dca !important;
@@ -70,15 +88,6 @@
     margin: 8px;
 }
 
-.link {
-    color: white
-}
-
-.link:hover {
-    text-decoration: none;
-    color: white;
-}
-
 .social-logo {
     height: 50px;
     width: auto;
@@ -94,6 +103,33 @@
 }
 .ico_email{
   padding-right: 1.5em;
+}
+
+.btn-link {
+    font-weight: bold;
+    color: map-get($tpr-colors, 'magenta');
+    @extend .font-marked;
+    &:not(.stretched-link) {
+        position: relative;
+        &:after {
+            $size-border: 5px;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 1.75rem;
+            width: 0;
+            height: 0;
+            top: calc(50% - #{$size-border / 2});
+            border-left: $size-border solid transparent;
+            border-right: $size-border solid transparent;
+            border-top: $size-border solid map-get($tpr-colors, 'magenta');
+            @include property-prefix(transform, rotate(-90deg));
+        }
+    }
+    &:hover, &:focus, &:active {
+        color: #911140;
+        text-decoration: none;
+    }
 }
 
 @include tablet-down {

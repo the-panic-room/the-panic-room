@@ -1,6 +1,10 @@
 ---
 layout: default
+body_class: tpr-blog
+styles:
+    - /assets/css/blog.css
 ---
+{% assign author = site.teams | where: "username", page.author | first %}
 <div id="main" class="container-fluid m-0 p-0">
     {% if page.cover %}
         <div class="container-fluid hero-imagen cover auto-size m-0 p-0" style="background-image: url('{{ page.cover | prepend: site.baseurl }}')">
@@ -42,12 +46,26 @@ layout: default
             <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
         </ol>
     </nav>
-    <div class="container container-page p-5 my-5">
-        {{ content }}
-        {% if page.author %}
-            <hr>
-            {% include person_media.html author=page.author post=page.date %}
-        {% endif %}
+    <div class="container my-3">
+        <div class="card p-5 font-base text-justify page">
+            <div class="card-header">
+                <h1 class="display-3">{{ page.title }}</h1>
+            </div>
+            <div class="card-body">
+                {{ content }}
+            </div>
+            {% if author %}
+                <div class="card-footer">
+                    <div class="media">
+                      <img class="mr-3" src="{{ author.cover }}" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="mt-0">{{ author.name }}</h5>
+                        <time datetime="{{ page.date  | date: '%Y-%m-%d' }}">{{ page.date  | date: "%-d %B %Y" }}</time>
+                      </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
     </div>
 </div>
 {% include footer.html %}

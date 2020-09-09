@@ -1,3 +1,14 @@
+.font-base {
+    font-size: 1rem;
+    @include tablet-down {
+        & {
+            font-size: 1.25rem;
+        }
+    }
+}
+.font-marked {
+    font-size: 1.25rem;
+}
 .container-page {
     font-size: 1.25rem;
     line-height: 2.15;

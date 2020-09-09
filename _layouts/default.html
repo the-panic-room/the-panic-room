@@ -10,9 +10,9 @@
         {% include analytics.html %}
     {% endif %}
 </head>
-<body{% if layout.body_class %} class="{{ layout.body_class }}"{% endif %}>
+<body class="{{- layout.body_class | append:' ' | append:page.body_class -}}">
     {{ content }}
-    <div class="cookie-consent collapse" id="cookie-consent">
+    <div class="cookie-consent bg-black collapse" id="cookie-consent">
     	<button class="close" type="button" data-toggle="collapse"
             data-target="#cookie-consent" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span aria-hidden="true">&times;</span>
