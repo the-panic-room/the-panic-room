@@ -8,7 +8,6 @@
 @each $color, $value in $tpr-colors {
 	.bg-#{$color} {
 		background-color: $value !important;
-		@debug index($tpr-dark-colors, $color);
 		@if index($tpr-dark-colors, $color) {
 			color: white;
 		}

@@ -11,6 +11,7 @@ self.addEventListener("install", function(e) {
         "{{'/' | prepend: site.baseurl }}",
         "{{'/index.html' | prepend: site.baseurl }}",
         "{{'/services.html' | prepend: site.baseurl }}",
+        "{{'/blog.html' | prepend: site.baseurl }}",
         "{{'/developers.html' | prepend: site.baseurl }}",
         "{{'/contact.html' | prepend: site.baseurl }}",
         "{{'/privacity.html' | prepend: site.baseurl }}",
@@ -51,16 +52,18 @@ self.addEventListener('activate', function (event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.open(cacheName)
-      .then(function(cache) {
-        return cache.match(event.request)
-          .then(function (response) {
-            return response || fetch(event.request).then(function(response) {
-              cache.put(event.request, response.clone());
-              return response;
-            });
-          })
-      })
-  );
+  if (event.request && event.request.method === 'GET') {
+    event.respondWith(
+      caches.open(cacheName)
+        .then(function(cache) {
+          return cache.match(event.request)
+            .then(function (response) {
+              return response || fetch(event.request).then(function(response) {
+                cache.put(event.request, response.clone());
+                return response;
+              });
+            })
+        })
+    );
+  }
 });

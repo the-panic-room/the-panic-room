@@ -1,21 +1,24 @@
+{% if jekyll.environment == "production" %}
 <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "The Panic Room",
-        "url": "https://panicroom.tk",
-        "address": "Venezuela, Sucre, Cúmana [6101]",
-        "sameAs": [
-          "https://t.me/tpanicroom",
-          "https://github.com/the-panic-room",
-          "https://twitter.com/tpanicroom",
-          "https://www.facebook.com/tpanicroom",
-          "https://www.instagram.com/tpanicroom",
-          "https://www.linkedin.com/company/thepanicroom",
-          "https://www.youtube.com/channel/UC-YpyV5VKGgRePyUo0AZb_A"
-        ]
-      }
-    </script>
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "The Panic Room",
+    "url": "https://panicroom.tk",
+    "address": "Venezuela, Sucre, Cúmana [6101]",
+    "sameAs": [
+      "https://t.me/tpanicroom",
+      "https://github.com/the-panic-room",
+      "https://twitter.com/tpanicroom",
+      "https://www.facebook.com/tpanicroom",
+      "https://www.instagram.com/tpanicroom",
+      "https://www.linkedin.com/company/thepanicroom",
+      "https://www.youtube.com/channel/UC-YpyV5VKGgRePyUo0AZb_A"
+    ]
+  }
+</script>
+<script type="text/javascript" src="{{'/assets/js/cache-polyfill.js' | prepend: site.baseurl }}"></script>
+{% endif %}
 
 <script src="{{'/assets/js/jquery-3.4.1.min.js' | prepend: site.baseurl }}"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -28,29 +31,20 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="{{'/assets/js/cache-polyfill.js' | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{'/assets/js/navbar.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{'/assets/js/navbar.js' | prepend: site.baseurl }}" async></script>
 {% for uri in include.scripts %}
     <script type="text/javascript" src="{{ uri | prepend: site.baseurl }}"></script>
 {% endfor %}
 <script>
+  {% if jekyll.environment == "production" %}
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("{{'/sw.js' | prepend: site.baseurl }}", { scope: '/' })
           .then(function (registration) {
               console.log('ServiceWorker registration successful with scope: ', registration.scope);
           });
     }
-    function onSubscribe() {
-      document.getElementById("sib-form-subscribe").submit();
-    }
-    $(document).ready(function () {
-        $('.hero-imagen.cover nav#nav #menu').on('hidden.bs.collapse', function () {
-            // do something...
-            $(this).parent().removeClass("active")
-        })
-        $('.hero-imagen.cover nav#nav #menu').on('show.bs.collapse', function () {
-            // do something...
-            $(this).parent().addClass("active")
-        })
-    })
+  {% endif %}
+  function onSubscribe() {
+    document.getElementById("sib-form-subscribe").submit();
+  }
 </script>

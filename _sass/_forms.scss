@@ -14,6 +14,9 @@ input, textarea {
 // input, textarea, .entry__label {
 //     color: white
 // }
+.entry__label, input::placeholder {
+	color: #515151;
+}
 
 input:focus, textarea:focus { border-color: #9b4dca; outline: none }
 

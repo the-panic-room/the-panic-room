@@ -39,12 +39,11 @@
     position: relative;
     @extend .font-base;
     .separator {
-        border-right: 3px solid;
+        border-left: 3px solid;
     }
     @include tablet-down {
         .separator {
-            border-right: none;
-            border-bottom: 3px solid;
+            border: none;
         }
     }
     .row {
