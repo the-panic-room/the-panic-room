@@ -100,7 +100,7 @@
     .hero-cover1 {
         background-image: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.png');
         @supports (background-image: url('../images/bg-mobile.webp')) {
-            background-image: url('../images/bg-mobile.webp');
+            background-image: linear-gradient(#000, rgba(0, 0, 0, 0.897), transparent), url('../images/bg-mobile.webp');
         }
     }
     .hero {
