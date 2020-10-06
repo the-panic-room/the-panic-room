@@ -1,7 +1,9 @@
-## [Unreleased] 2020-08-28
+## [1.0.0] 2020-10-06
 
 ### Added
 
+- script para renderizar iconos svg.
+- Contenido de los servicios
 - soporte a services workers y cache app.
 - Compresión de archivos javascript en producción.
 - Polyfill para detectar soporte de imagenes webp
