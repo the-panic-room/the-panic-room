@@ -23,14 +23,46 @@
 	    	});
 	}
 
-	WebpIsSupported().then(function (result) {
-		console.log(result);
-		if(result) {
+	function navbarInit() {
+		var body = document.body;
+		if (body.classList.contains('no-fixed')) {
 			return;
 		}
-		document.querySelectorAll('img[data-webp]')
-			.forEach(function (element) {
-				element.src = element.dataset.webp;
+		var margin = 20;
+		var navbar = document.getElementById('nav');
+		var breakpoint = (navbar.offsetHeight + margin);
+		window.addEventListener('scroll', function (event) {
+			if (window.scrollY > breakpoint) {
+				body.classList.add('header-fixed');
+			} else {
+				body.classList.remove('header-fixed');
+			}
+		});
+	}
+
+	function cookieInit() {
+		var cookieIsAccept = sessionStorage.getItem('cookie-consent-accept');
+		if (!cookieIsAccept) {
+			$('#cookie-consent').collapse('show');
+		}
+		$('#accept').on('click', function () {
+			sessionStorage.setItem('cookie-consent-accept', true);
+			$('#cookie-consent').collapse('hide');
+		});
+	}
+	global.addEventListener('load', function () {
+		WebpIsSupported()
+			.then(function (result) {
+				console.log(result);
+				if(result) {
+					return;
+				}
+				document.querySelectorAll('img[data-webp]')
+					.forEach(function (element) {
+						element.src = element.dataset.webp;
+					});
 			});
+		cookieInit();
+		navbarInit();
 	});
 })(window);
